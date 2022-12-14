@@ -58,6 +58,32 @@ export default {
               gate: 'user_access'
             }
           ]
+        },
+        {
+          title: 'cruds.review.title',
+          icon: 'table_view',
+          path: { name: 'reviews.index' },
+          gate: 'review_access'
+        },
+        {
+          title: 'cruds.blog.title',
+          icon: 'table_view',
+          path: { name: 'blog' },
+          gate: 'blog_access',
+          children: [
+            {
+              title: 'cruds.blogCategory.title',
+              icon: 'table_view',
+              path: { name: 'blog_categories.index' },
+              gate: 'blog_category_access'
+            },
+            {
+              title: 'cruds.blogPost.title',
+              icon: 'table_view',
+              path: { name: 'blog_posts.index' },
+              gate: 'blog_post_access'
+            }
+          ]
         }
       ]
     }

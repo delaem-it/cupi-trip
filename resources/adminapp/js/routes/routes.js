@@ -96,6 +96,86 @@ const routes = [
             meta: { title: 'cruds.user.title' }
           }
         ]
+      },
+      {
+        path: 'reviews',
+        name: 'reviews.index',
+        component: () => import('@cruds/Reviews/Index.vue'),
+        meta: { title: 'cruds.review.title' }
+      },
+      {
+        path: 'reviews/create',
+        name: 'reviews.create',
+        component: () => import('@cruds/Reviews/Create.vue'),
+        meta: { title: 'cruds.review.title' }
+      },
+      {
+        path: 'reviews/:id',
+        name: 'reviews.show',
+        component: () => import('@cruds/Reviews/Show.vue'),
+        meta: { title: 'cruds.review.title' }
+      },
+      {
+        path: 'reviews/:id/edit',
+        name: 'reviews.edit',
+        component: () => import('@cruds/Reviews/Edit.vue'),
+        meta: { title: 'cruds.review.title' }
+      },
+      {
+        path: 'blog',
+        name: 'blog',
+        component: View,
+        redirect: { name: 'blog_categories.index' },
+        children: [
+          {
+            path: 'blog-categories',
+            name: 'blog_categories.index',
+            component: () => import('@cruds/BlogCategories/Index.vue'),
+            meta: { title: 'cruds.blogCategory.title' }
+          },
+          {
+            path: 'blog-categories/create',
+            name: 'blog_categories.create',
+            component: () => import('@cruds/BlogCategories/Create.vue'),
+            meta: { title: 'cruds.blogCategory.title' }
+          },
+          {
+            path: 'blog-categories/:id',
+            name: 'blog_categories.show',
+            component: () => import('@cruds/BlogCategories/Show.vue'),
+            meta: { title: 'cruds.blogCategory.title' }
+          },
+          {
+            path: 'blog-categories/:id/edit',
+            name: 'blog_categories.edit',
+            component: () => import('@cruds/BlogCategories/Edit.vue'),
+            meta: { title: 'cruds.blogCategory.title' }
+          },
+          {
+            path: 'blog-posts',
+            name: 'blog_posts.index',
+            component: () => import('@cruds/BlogPosts/Index.vue'),
+            meta: { title: 'cruds.blogPost.title' }
+          },
+          {
+            path: 'blog-posts/create',
+            name: 'blog_posts.create',
+            component: () => import('@cruds/BlogPosts/Create.vue'),
+            meta: { title: 'cruds.blogPost.title' }
+          },
+          {
+            path: 'blog-posts/:id',
+            name: 'blog_posts.show',
+            component: () => import('@cruds/BlogPosts/Show.vue'),
+            meta: { title: 'cruds.blogPost.title' }
+          },
+          {
+            path: 'blog-posts/:id/edit',
+            name: 'blog_posts.edit',
+            component: () => import('@cruds/BlogPosts/Edit.vue'),
+            meta: { title: 'cruds.blogPost.title' }
+          }
+        ]
       }
     ]
   }
