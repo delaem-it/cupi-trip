@@ -74,6 +74,70 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 16,
                 'title' => 'user_access',
             ],
+            [
+                'id'    => 17,
+                'title' => 'review_create',
+            ],
+            [
+                'id'    => 18,
+                'title' => 'review_edit',
+            ],
+            [
+                'id'    => 19,
+                'title' => 'review_show',
+            ],
+            [
+                'id'    => 20,
+                'title' => 'review_delete',
+            ],
+            [
+                'id'    => 21,
+                'title' => 'review_access',
+            ],
+            [
+                'id'    => 22,
+                'title' => 'blog_category_create',
+            ],
+            [
+                'id'    => 23,
+                'title' => 'blog_category_edit',
+            ],
+            [
+                'id'    => 24,
+                'title' => 'blog_category_show',
+            ],
+            [
+                'id'    => 25,
+                'title' => 'blog_category_delete',
+            ],
+            [
+                'id'    => 26,
+                'title' => 'blog_category_access',
+            ],
+            [
+                'id'    => 27,
+                'title' => 'blog_access',
+            ],
+            [
+                'id'    => 28,
+                'title' => 'blog_post_create',
+            ],
+            [
+                'id'    => 29,
+                'title' => 'blog_post_edit',
+            ],
+            [
+                'id'    => 30,
+                'title' => 'blog_post_show',
+            ],
+            [
+                'id'    => 31,
+                'title' => 'blog_post_delete',
+            ],
+            [
+                'id'    => 32,
+                'title' => 'blog_post_access',
+            ],
         ];
 
         Permission::insert($permissions);

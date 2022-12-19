@@ -16,4 +16,13 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Users
     Route::resource('users', 'UsersApiController');
+
+    // Reviews
+    Route::resource('reviews', 'ReviewsApiController');
+
+    // Blog Category
+    Route::resource('blog-categories', 'BlogCategoryApiController');
+
+    // Blog Post
+    Route::resource('blog-posts', 'BlogPostApiController');
 });
