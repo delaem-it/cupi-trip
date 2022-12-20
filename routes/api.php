@@ -1,5 +1,10 @@
 <?php
 
+Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1'], function () {
+    // Search
+    Route::get('search', 'TravelPayoutsController@index');
+});
+
 Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => ['auth:sanctum']], function () {
     // Abilities
     Route::apiResource('abilities', 'AbilitiesController', ['only' => ['index']]);
