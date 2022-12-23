@@ -1,0 +1,266 @@
+.div,
+.icon {
+  position: relative;
+}
+.icon {
+  width: 162.25px;
+  height: 28px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div {
+  align-self: stretch;
+  display: inline-block;
+}
+.logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.a,
+.div1 {
+  position: relative;
+  display: inline-block;
+}
+.div1 {
+  align-self: stretch;
+  font-weight: 600;
+}
+.a {
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.a:hover {
+  color: var(--gray-eef0f61);
+}
+.link1 {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.frameLink1,
+.link,
+.link1,
+.link4 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.link {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-xs);
+  color: var(--gray-a5a7b2);
+}
+.frameLink1,
+.link4 {
+  justify-content: flex-start;
+}
+.frameLink1 {
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.link4 {
+  flex-direction: row;
+  color: var(--gray-a5a7b2);
+}
+.frameLink,
+.frameLink2 {
+  align-self: stretch;
+  flex-direction: column;
+}
+.frameLink2 {
+  height: 46px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.frameLink {
+  flex: 1;
+  gap: var(--gap-2xl);
+  color: var(--white-ffffff1);
+}
+.frameLink,
+.frameLink3,
+.frameLink4,
+.socialNetworks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameLink3 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  color: var(--white-ffffff1);
+}
+.frameLink4,
+.socialNetworks {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.frameLink4 {
+  width: 196px;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.visaIcon {
+  position: relative;
+  width: 37.08px;
+  height: 12px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.groupIcon,
+.mirLogo1Icon {
+  position: relative;
+  width: 38.83px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.mirLogo1Icon {
+  width: 42.39px;
+  height: 12px;
+  overflow: hidden;
+}
+.frameDiv,
+.links,
+.socialNetworks1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.socialNetworks1 {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-lg);
+}
+.frameDiv,
+.links {
+  align-items: flex-start;
+  gap: var(--gap-xl);
+}
+.frameDiv {
+  flex: 1;
+  flex-direction: column;
+}
+.links {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 var(--padding-3xl);
+  box-sizing: border-box;
+}
+.rectangleDiv {
+  align-self: stretch;
+  background-color: var(--gray-33343a);
+  height: 1px;
+  flex-shrink: 0;
+}
+.div6,
+.div7,
+.rectangleDiv {
+  position: relative;
+}
+.div6 {
+  display: flex;
+  align-items: center;
+  width: 197px;
+  flex-shrink: 0;
+}
+.div7 {
+  display: inline-block;
+}
+.footer,
+.footer1,
+.links1,
+.links2 {
+  display: flex;
+  align-items: flex-start;
+}
+.links2 {
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--gap-lg);
+}
+.footer,
+.footer1,
+.links1 {
+  align-self: stretch;
+}
+.links1 {
+  flex-direction: row;
+  padding: var(--padding-xs) 0 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.footer,
+.footer1 {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer1 {
+  gap: var(--gap-0);
+}
+.footer {
+  background-color: var(--black-222222);
+  overflow: hidden;
+  padding: var(--padding-5xl) var(--padding-5xl) var(--padding-lg);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--exo-2-14-regular1-size);
+  color: var(--gray-52545c);
+  font-family: var(--exo-2-24-regular1);
+}
+@media screen and (max-width: 768px) {
+  .frameDiv,
+  .frameLink,
+  .frameLink3,
+  .logo {
+    flex: unset;
+    align-self: stretch;
+  }
+  .links,
+  .links1,
+  .links2 {
+    flex-direction: column;
+  }
+  .footer {
+    padding-left: var(--padding-xs);
+    padding-top: var(--padding-2xl);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .frameDiv,
+  .frameLink,
+  .frameLink3,
+  .logo {
+    flex: unset;
+    align-self: stretch;
+  }
+  .links {
+    padding-bottom: var(--padding-md);
+    box-sizing: border-box;
+  }
+  .links,
+  .links1 {
+    flex-direction: column;
+  }
+  .footer {
+    padding-left: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}

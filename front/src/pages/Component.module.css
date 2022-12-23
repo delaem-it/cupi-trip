@@ -1,0 +1,545 @@
+.icons16px {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.div1 {
+  position: relative;
+  font-size: var(--exo-2-14-regular1-size);
+  font-weight: 600;
+  font-family: var(--exo-2-24-regular1);
+  color: var(--blue-007aff1);
+  text-align: center;
+  display: inline-block;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--blue-007aff1);
+  padding: var(--padding-2xs) var(--padding-lg);
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+}
+.button:hover {
+  border: 1px solid var(--color-indigo-200);
+  box-sizing: border-box;
+}
+.waytimeavia {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-lg) 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.rectangleDiv {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--gray-eef0f61);
+  width: 1px;
+  flex-shrink: 0;
+}
+.div2,
+.div3 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+}
+.div2 {
+  align-self: stretch;
+  width: 50%;
+}
+.div3 {
+  font-size: var(--exo-2-14-regular1-size);
+  font-family: var(--exo-2-24-regular1);
+  color: var(--white-ffffff1);
+  text-align: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs) var(--padding-lg);
+  background-color: var(--blue-007aff1);
+  align-self: stretch;
+  border-radius: var(--br-md);
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s;
+}
+.button1:hover {
+  background-color: var(--color-indigo-200);
+}
+.pricebutton,
+.pricedetailsButton,
+.ticket {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.pricebutton {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.pricedetailsButton,
+.ticket {
+  box-sizing: border-box;
+}
+.pricedetailsButton {
+  width: 184px;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-lg);
+  justify-content: space-between;
+}
+.ticket {
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff1);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-lg);
+  justify-content: flex-start;
+  gap: var(--gap-0);
+  font-size: var(--exo-2-20-semibold1-size);
+}
+.div4,
+.logoIcon {
+  position: relative;
+}
+.logoIcon {
+  border-radius: var(--br-lg);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div4 {
+  font-weight: 600;
+  display: inline-block;
+}
+.avia,
+.way {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.way {
+  flex: 1;
+  align-items: flex-start;
+  gap: var(--gap-lg);
+}
+.div5 {
+  position: relative;
+  font-size: var(--exo-2-12-semibold1-size);
+  font-weight: 600;
+  color: var(--orange-ffa6201);
+  display: none;
+}
+.timestatus,
+.waytime {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.timestatus {
+  width: auto;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: var(--gap-2xs);
+}
+.waytime {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-lg);
+  font-size: var(--exo-2-16-medium1-size);
+}
+.div6 {
+  position: relative;
+  display: inline-block;
+}
+.div6,
+.frameDiv,
+.span {
+  align-self: stretch;
+}
+.span {
+  position: relative;
+  font-size: var(--exo-2-24-regular1-size);
+  display: inline-block;
+}
+.frameDiv {
+  gap: var(--gap-2xs);
+}
+.frameDiv,
+.timestatus1,
+.timesubtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.timesubtitle {
+  flex: 1;
+  gap: var(--gap-xs);
+}
+.timestatus1 {
+  width: auto;
+  flex-shrink: 0;
+  gap: var(--gap-2xs);
+  font-size: var(--exo-2-16-medium1-size);
+}
+.pricedetailsButton1,
+.waytime1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.waytime1 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  font-size: var(--exo-2-14-regular1-size);
+}
+.pricedetailsButton1 {
+  width: 184px;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-lg);
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: var(--exo-2-20-semibold1-size);
+}
+.ticket1,
+.vKO {
+  align-self: stretch;
+}
+.ticket1 {
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-lg);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.vKO {
+  position: relative;
+  color: var(--gray-81838e1);
+  display: inline-block;
+}
+.vectorIcon,
+.vectorIcon1 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 14px;
+}
+.vectorIcon1 {
+  height: 14.73px;
+}
+.line {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.div13,
+.div14,
+.div15 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.div14,
+.div15 {
+  font-weight: 600;
+}
+.div14 {
+  font-size: var(--exo-2-12-semibold1-size);
+  color: var(--green-60b56e);
+}
+.div15 {
+  align-self: stretch;
+}
+.pricebutton2 {
+  width: 184px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-lg);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  font-size: var(--exo-2-20-semibold1-size);
+}
+.div40 {
+  position: relative;
+  display: inline-block;
+}
+.price {
+  border-radius: var(--br-sm);
+  background-color: var(--black-222222);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-4xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vectorIcon9 {
+  position: relative;
+  width: 8px;
+  height: 4px;
+  flex-shrink: 0;
+}
+.tagTransfer {
+  box-shadow: var(--sh-tag-map1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.pointTransferIcon {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+.pointTransfer {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-2xs);
+}
+.div43,
+.line4,
+.reviewText {
+  font-size: var(--exo-2-12-semibold1-size);
+}
+.line4 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+  text-align: center;
+  color: var(--white-ffffff1);
+}
+.div43,
+.reviewText {
+  position: relative;
+  font-weight: 600;
+  color: var(--orange-ffa6201);
+  display: inline-block;
+}
+.reviewText {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: var(--exo-2-14-regular1-size);
+  font-family: var(--exo-2-24-regular1);
+  color: var(--blue-007aff1);
+  text-align: justify;
+  transition: background-color 0.2s;
+}
+.reviewText:hover {
+  color: var(--color-indigo-200);
+}
+.arrowFuther,
+.tickets1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}
+.tickets1 {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-sm);
+}
+.filtertickets {
+  align-self: stretch;
+  background-color: var(--gray-f3f4fb1);
+  flex-direction: row;
+  padding: var(--padding-lg) var(--padding-5xl) var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.div,
+.filtertickets,
+.tickets {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tickets {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-0);
+}
+.div {
+  position: relative;
+  background-color: var(--gray-f3f4fb1);
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  text-align: left;
+  font-size: var(--exo-2-12-semibold1-size);
+  color: var(--black-0000001);
+  font-family: var(--exo-2-24-regular1);
+}
+@media screen and (max-width: 768px) {
+  .button {
+    display: flex;
+  }
+  .waytimeavia {
+    padding-right: 0;
+    padding-bottom: var(--padding-xs);
+    box-sizing: border-box;
+    flex: unset;
+    align-self: stretch;
+  }
+  .rectangleDiv {
+    display: flex;
+    height: 1px;
+    width: 100%;
+  }
+  .button1 {
+    transition: background-color 0.1s;
+    width: 50%;
+  }
+  .pricebutton {
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: var(--padding-2xs);
+  }
+  .pricedetailsButton {
+    padding-left: 0;
+    padding-top: var(--padding-xs);
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .ticket {
+    flex-direction: column;
+    padding: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .way {
+    flex: unset;
+    align-self: stretch;
+  }
+  .timestatus {
+    flex-direction: row;
+  }
+  .waytime {
+    flex-direction: column;
+  }
+  .span {
+    font-size: var(--exo-2-20-semibold1-size);
+  }
+  .timestatus1 {
+    flex-direction: row;
+  }
+  .waytime1 {
+    flex-direction: column;
+  }
+  .pricedetailsButton1 {
+    padding-left: 0;
+    padding-top: var(--padding-xs);
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .ticket1 {
+    flex-direction: column;
+    padding: var(--padding-xs);
+    box-sizing: border-box;
+  }
+  .line {
+    display: none;
+  }
+  .div15 {
+    width: 50%;
+    vertical-align: center;
+  }
+  .pricebutton2 {
+    flex-direction: row;
+    padding-left: 0;
+    padding-top: var(--padding-xs);
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .line4 {
+    display: none;
+  }
+  .tickets1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .filtertickets {
+    flex-direction: column;
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    padding-bottom: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .button {
+    display: flex;
+  }
+  .filtertickets {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .button {
+    display: flex;
+  }
+  .tickets1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .filtertickets {
+    flex-direction: column;
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}

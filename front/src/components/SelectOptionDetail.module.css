@@ -1,0 +1,55 @@
+.icons20px {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div,
+.div1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--exo-2-14-regular1-size);
+  font-family: var(--exo-2-24-regular1);
+  color: var(--black-0000001);
+  text-align: left;
+  display: inline-block;
+}
+.div1 {
+  font-size: var(--exo-2-12-semibold1-size);
+  color: var(--gray-a5a7b2);
+  display: none;
+}
+.subtitleheading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.rTW {
+  position: relative;
+  font-size: var(--exo-2-14-regular1-size);
+  font-family: var(--exo-2-24-regular1);
+  color: var(--gray-a5a7b2);
+  text-align: left;
+  display: inline-block;
+}
+.field {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs) var(--padding-xs);
+  background-color: var(--white-ffffff1);
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  transition: background-color 0.2s;
+}
+.field:hover {
+  background-color: var(--gray-f3f4fb1);
+}

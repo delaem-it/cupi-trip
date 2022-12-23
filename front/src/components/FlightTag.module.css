@@ -1,0 +1,9 @@
+.div {
+  position: relative;
+  font-size: var(--exo-2-12-semibold1-size);
+  font-weight: 600;
+  font-family: var(--exo-2-24-regular1);
+  color: var(--green-60b56e);
+  text-align: left;
+  display: inline-block;
+}

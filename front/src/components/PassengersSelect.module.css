@@ -1,0 +1,14 @@
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-2xs);
+  width: auto;
+  text-align: left;
+  font-size: var(--exo-2-14-regular1-size);
+  color: var(--black-0000001);
+  font-family: var(--exo-2-24-regular1);
+}

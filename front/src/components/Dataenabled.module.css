@@ -1,0 +1,22 @@
+.div1 {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  width: 18px;
+  flex-shrink: 0;
+}
+.div {
+  border-radius: var(--br-md);
+  background-color: var(--black-222222);
+  border: 1px solid var(--black-222222);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--exo-2-14-regular1-size);
+  color: var(--white-ffffff1);
+  font-family: var(--exo-2-24-regular1);
+}

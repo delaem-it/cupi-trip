@@ -1,0 +1,18 @@
+.nameFilter {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  border-radius: var(--br-sm);
+  background-color: var(--gray-f3f4fb1);
+  width: 278px;
+  height: 17px;
+  overflow: hidden;
+}
+.filter {
+  position: relative;
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff1);
+  width: 310px;
+  height: 98px;
+  flex-shrink: 0;
+}

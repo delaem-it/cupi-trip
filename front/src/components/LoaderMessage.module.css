@@ -1,0 +1,33 @@
+.rectangleDiv,
+.slider {
+  border-radius: var(--br-xs);
+  height: 6px;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blue-007aff1);
+  width: 172px;
+}
+.slider {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--blue-bfdeff);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.iconheading {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 var(--padding-lg);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  text-align: center;
+  font-size: var(--exo-2-24-regular1-size);
+  color: var(--black-0000001);
+  font-family: var(--exo-2-24-regular1);
+}

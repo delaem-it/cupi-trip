@@ -1,0 +1,30 @@
+.reviewText {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--exo-2-14-regular1-size);
+  font-weight: 600;
+  font-family: var(--exo-2-24-regular1);
+  color: var(--blue-007aff1);
+  text-align: justify;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+.reviewText:hover {
+  color: var(--color-indigo-200);
+}
+.icons16px {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.arrowFuther {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+}

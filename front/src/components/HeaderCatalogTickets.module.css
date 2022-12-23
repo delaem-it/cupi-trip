@@ -1,0 +1,58 @@
+.gradientHome,
+.headerhome1Icon {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+.headerhome1Icon {
+  height: 100%;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.gradientHome {
+  margin: 0 !important;
+  border-radius: 0 0 var(--br-xl) var(--br-xl);
+  background-color: var(--black-222222);
+  height: 160px;
+  flex-shrink: 0;
+  padding-top: var(--padding-xs);
+  z-index: 0;
+}
+.headerCatalogTickets,
+.home,
+.searchDropdown {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchDropdown {
+  padding: var(--padding-3xl) 0 0;
+  box-sizing: border-box;
+}
+.headerCatalogTickets,
+.home {
+  gap: var(--gap-0);
+}
+.home {
+  z-index: 1;
+}
+.headerCatalogTickets {
+  position: relative;
+  text-align: left;
+  font-size: var(--exo-2-16-medium1-size);
+  color: var(--black-0000001);
+  font-family: var(--exo-2-24-regular1);
+}
+@media screen and (max-width: 768px) {
+  .gradientHome {
+    height: 116px;
+    padding-top: var(--padding-lg);
+  }
+}

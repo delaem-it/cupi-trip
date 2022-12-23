@@ -1,0 +1,30 @@
+.div {
+  position: relative;
+  display: inline-block;
+}
+.div,
+.frameDiv,
+.span {
+  align-self: stretch;
+}
+.span {
+  position: relative;
+  font-size: var(--exo-2-24-regular1-size);
+  display: inline-block;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  text-align: left;
+  font-size: var(--exo-2-14-regular1-size);
+  color: var(--black-0000001);
+  font-family: var(--exo-2-24-regular1);
+}
+@media screen and (max-width: 768px) {
+  .span {
+    font-size: var(--exo-2-20-semibold1-size);
+  }
+}
