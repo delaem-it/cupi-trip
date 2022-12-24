@@ -14,7 +14,7 @@
   top: 75px;
   left: 0;
   border-radius: var(--br-lg);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   box-shadow: var(--window2);
   flex-direction: column;
   padding: var(--padding-md);

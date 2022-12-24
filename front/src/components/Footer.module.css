@@ -84,7 +84,7 @@
 .frameLink {
   flex: 1;
   gap: var(--gap-2xl);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .frameLink,
 .frameLink3,
@@ -98,7 +98,7 @@
   flex: 1;
   flex-direction: column;
   gap: var(--gap-sm);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .frameLink4,
 .socialNetworks {

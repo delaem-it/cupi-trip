@@ -67,7 +67,7 @@
 }
 .buttonIcon {
   border-radius: var(--br-2xl);
-  border: 1px solid var(--white-ffffff1);
+  border: 1px solid var(--white-ffffff);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -128,7 +128,7 @@
   justify-content: space-between;
   position: sticky;
   font-size: var(--exo-2-16-medium1-size);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .div2 {
   position: relative;
@@ -147,7 +147,7 @@
   font-size: var(--exo-2-16-medium1-size);
   font-weight: 500;
   font-family: var(--exo-2-24-regular1);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   text-align: left;
   display: inline-block;
 }
@@ -169,7 +169,7 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   flex: 1;
   border-radius: var(--br-md) 0 0 var(--br-md);
   display: flex;
@@ -187,7 +187,7 @@
 }
 .line {
   align-self: stretch;
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   flex-direction: column;
   padding: var(--padding-2xs) 0;
@@ -203,7 +203,7 @@
 .div5 {
   font-size: var(--exo-2-16-medium1-size);
   font-weight: 500;
-  color: var(--black-0000001);
+  color: var(--black-000000);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -218,7 +218,7 @@
 .field2 {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -232,7 +232,7 @@
 .field5 {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -276,7 +276,7 @@
 .field6 {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   box-shadow: var(--search-field);
   display: none;
   flex-direction: row;
@@ -285,13 +285,13 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .div14 {
   position: relative;
   font-weight: 600;
   font-family: var(--exo-2-24-regular1);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
   text-align: center;
   display: inline-block;
 }
@@ -319,7 +319,7 @@
   background-color: var(--blue-0068d9);
 }
 .field7 {
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   padding: var(--padding-xs);
   justify-content: flex-start;
   gap: var(--gap-xs);
@@ -332,7 +332,7 @@
 }
 .line4 {
   align-self: stretch;
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   flex-direction: row;
   padding: 0 var(--padding-xs);
@@ -354,7 +354,7 @@
 .fieldsearchmobile {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   box-shadow: var(--search-field);
   display: none;
   flex-direction: column;
@@ -409,7 +409,7 @@
 .filter5 {
   position: relative;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 310px;
   height: 98px;
   flex-shrink: 0;
@@ -582,7 +582,7 @@
 }
 .preoladerTickets {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   overflow: hidden;
   flex-direction: row;
   padding: var(--padding-lg);
@@ -608,7 +608,7 @@
   gap: var(--gap-xl);
   text-align: center;
   font-size: var(--exo-2-24-regular1-size);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .div27 {
   align-self: stretch;
@@ -675,7 +675,7 @@
 .frameLink,
 .frameLink3 {
   flex: 1;
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .frameLink {
   align-self: stretch;

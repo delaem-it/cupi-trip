@@ -8,7 +8,7 @@
 }
 .searchDropdown {
   border-radius: 0 0 var(--br-2xl) var(--br-2xl);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   padding: var(--padding-4xs) 0 var(--padding-xs);
   box-sizing: border-box;
 }

@@ -29,7 +29,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-sm);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   border: 1px solid var(--gray-a5a7b2);
   box-sizing: border-box;
 }
@@ -97,7 +97,7 @@
 }
 .filter {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 310px;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,6 @@
   gap: var(--gap-sm);
   text-align: left;
   font-size: var(--exo-2-14-regular1-size);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   font-family: var(--exo-2-24-regular1);
 }

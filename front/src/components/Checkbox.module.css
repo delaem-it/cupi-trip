@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-sm);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   border: 1px solid var(--gray-a5a7b2);
   box-sizing: border-box;
 }

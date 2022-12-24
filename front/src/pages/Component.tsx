@@ -104,9 +104,11 @@ const Component: FunctionComponent = () => {
               <div className={styles.pricedetailsButton1}>
                 <div className={styles.pricebutton}>
                   <div className={styles.div2}>9 985 ₽</div>
-                  <Button buttonText="Забронировать" />
+                  <Button>Забронировать</Button>
                 </div>
-                <ButtonWithIconAfter reviewText="Cкрыть детали" icons16px="../icons/icons-16px20.svg" />
+                <Button iconAfter="../icons/icons-16px20.svg" variant="text" className={styles.ticketExpand}>
+                  Cкрыть детали
+                </Button>
               </div>
             </div>
             <div className={styles.ticket1}>
@@ -866,31 +868,10 @@ const Component: FunctionComponent = () => {
                 </div>
               </div>
             </div>
-            <Button
-              buttonText="Показать ещё"
-              iconAfter="../icons/icons-12px.svg"
-              // arrowFutherJustifyContent="center"
-              // arrowFutherGap="var(--gap-xs)"
-              // arrowFutherCursor="pointer"
-              // arrowFutherBorder="1px solid var(--gray-d5d7e2)"
-              // arrowFutherPadding="var(--padding-sm) var(--padding-lg)"
-              // arrowFutherBackgroundColor="transparent"
-              // arrowFutherAlignSelf="stretch"
-              // arrowFutherBorderRadius="var(--br-md)"
-              // arrowFutherBoxSizing="border-box"
-              // arrowFutherTransition="color 0.2s"
-              // reviewTextCursor="unset"
-              // reviewTextBorder="unset"
-              // reviewTextPadding="unset"
-              // reviewTextBackgroundColor="unset"
-              // reviewTextFontSize="var(--exo-2-16-semibold-size)"
-              // reviewTextColor="var(--gray-33343a)"
-              // reviewTextTextAlign="center"
-              // reviewTextTransition="unset"
-              // icons16pxWidth="12px"
-              // icons16pxHeight="12px"
-              // icons16pxOverflow="hidden"
-            />
+
+            <Button iconAfter="../icons/icons-12px.svg" variant="outlined" className={styles.showMore}>
+              Показать ещё
+            </Button>
           </div>
         </div>
         <Footer />

@@ -779,7 +779,7 @@ const Component7: FunctionComponent = () => {
                   </div>
                   <img className={styles.icons20px} alt="" src="../icons/icons-20px23.svg" />
                 </div>
-                <Button buttonText="Найти" buttonWidth="164px" />
+                <Button style={{ width: '164px' }}>Найти</Button>
                 <div className={styles.fieldsearchmobile}>
                   <div className={styles.field6}>
                     <div className={styles.subtitleheading}>

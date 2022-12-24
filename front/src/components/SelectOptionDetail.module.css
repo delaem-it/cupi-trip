@@ -11,7 +11,7 @@
   position: relative;
   font-size: var(--exo-2-14-regular1-size);
   font-family: var(--exo-2-24-regular1);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   text-align: left;
   display: inline-block;
 }
@@ -40,7 +40,7 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-2xs) var(--padding-xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   align-self: stretch;
   display: flex;
   flex-direction: row;

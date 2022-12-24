@@ -3,6 +3,7 @@
 body {
   margin: 0;
   line-height: normal;
+  font-family: var(--exo-2-24-regular1);
 }
 :root {
   /* fonts */
@@ -37,9 +38,9 @@ body {
   --color-gray-1100: rgba(255, 255, 255, 0.4);
   --color-gray-1200: rgba(255, 255, 255, 0.2);
 
-  --white-ffffff1: #fff;
+  --white-ffffff: #fff;
   --black-222222: #222;
-  --black-0000001: #000;
+  --black-000000: #000;
 
   /* Gaps */
   --gap-0: 0px;

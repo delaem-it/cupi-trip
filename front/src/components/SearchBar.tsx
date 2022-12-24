@@ -123,7 +123,7 @@ const SearchBar: FunctionComponent<SearchBarType> = ({
                 </div>
                 <img className={styles.icons20px} alt="" src={icons20px} />
             </div>
-            <Button buttonText="Найти" buttonWidth="164px" />
+            <Button style={{width:"164px"}}>Найти</Button>
             <div
                 className={styles.fieldsearchmobile}
                 style={fieldsearchmobileStyle}

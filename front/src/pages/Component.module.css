@@ -61,7 +61,7 @@
 .div3 {
   font-size: var(--exo-2-14-regular1-size);
   font-family: var(--exo-2-24-regular1);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
   text-align: center;
 }
 .button1 {
@@ -106,7 +106,7 @@
 }
 .ticket {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   overflow: hidden;
   flex-direction: row;
   padding: var(--padding-lg);
@@ -229,7 +229,7 @@
 }
 .ticket1 {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -354,7 +354,7 @@
   justify-content: flex-start;
   gap: var(--gap-0);
   text-align: center;
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .div43,
 .reviewText {
@@ -411,17 +411,33 @@
   flex-direction: column;
   gap: var(--gap-0);
 }
-.div {
-  position: relative;
-  background-color: var(--gray-f3f4fb1);
-  width: 100%;
-  overflow: hidden;
-  flex-direction: row;
-  text-align: left;
-  font-size: var(--exo-2-12-semibold1-size);
-  color: var(--black-0000001);
-  font-family: var(--exo-2-24-regular1);
+
+.ticketExpand {
+  padding: 0;
+  justify-content: flex-start;
+  color: var(--blue-007aff1);
+  gap: var(--gap-2xs);
 }
+.ticketExpand:hover {
+  padding: 0;
+  justify-content: flex-start;
+  color: var(--blue-0068d9);
+}
+
+.showMore {
+  width: 100%;
+  font-size: var(--exo-2-12-semibold1-size);
+  color: var(--gray-33343a);
+  font-family: var(--exo-2-24-regular1);
+  padding: var(--padding-sm) var(--padding-lg);
+}
+
+.showMore img {
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .button {
     display: flex;

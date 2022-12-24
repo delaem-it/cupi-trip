@@ -14,7 +14,7 @@ const SearchMessage: FunctionComponent = () => {
           componentColor="var(--gray-81838e)"
         />
       </div>
-      <Button buttonText="Сбросить фильтр" buttonWidth="196px" boxShadow="var(--search-field)" />
+      <Button style={{ width: '196px', boxShadow: 'var(--search-field)' }}>Сбросить фильтр</Button>
     </div>
   );
 };

@@ -4,7 +4,7 @@
   top: 75px;
   left: -92px;
   border-radius: var(--br-lg);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   box-shadow: var(--window2);
   width: 320px;
   display: flex;
@@ -17,6 +17,6 @@
   z-index: 1;
   text-align: left;
   font-size: var(--exo-2-14-regular1-size);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   font-family: var(--exo-2-24-regular1);
 }

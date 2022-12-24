@@ -17,7 +17,7 @@
   font-size: var(--exo-2-16-medium1-size);
   font-weight: 500;
   font-family: var(--exo-2-24-regular1);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   text-align: left;
   display: inline-block;
 }
@@ -39,7 +39,7 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   flex: 1;
   border-radius: var(--br-md) 0 0 var(--br-md);
   display: flex;

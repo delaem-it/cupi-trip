@@ -9,7 +9,7 @@
 .div {
   font-size: var(--exo-2-14-regular1-size);
   font-weight: 600;
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .div1 {
   font-size: var(--exo-2-12-semibold1-size);
@@ -35,7 +35,7 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-2xs) var(--padding-xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   align-self: stretch;
   display: flex;
   flex-direction: row;

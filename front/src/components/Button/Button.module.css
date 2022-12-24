@@ -1,8 +1,6 @@
 .button {
   cursor: pointer;
-  border: 0;
   padding: var(--padding-2xs) var(--padding-lg);
-  background-color: var(--blue-007aff1);
   align-self: stretch;
   border-radius: var(--br-md);
   display: flex;
@@ -13,14 +11,39 @@
   gap: var(--gap-sm);
   transition: background-color 0.1s;
   font-weight: 600;
-  text-transform: capitalize;
   font-size: var(--exo-2-14-regular1-size);
   font-family: var(--exo-2-24-regular1);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
-.button:hover {
+
+.contained {
+  background-color: var(--blue-007aff1);
+  border: 0;
+}
+.contained:hover,
+.contained:active {
   background-color: var(--blue-0068d9);
 }
+.outlined {
+  gap: var(--gap-xs);
+  border: 1px solid var(--gray-d5d7e2);
+  background-color: transparent;
+  transition: color 0.2s ease 0s;
+}
+.outlined:hover,
+.outlined:active {
+  border: 1px solid var(--gray-d5d7e2);
+}
+.text {
+  background-color: transparent;
+  border: 0;
+  color: var(--black-222222);
+}
+.text:hover,
+.text:active {
+  color: var(--black-000000);
+}
+
 .icon {
   position: relative;
   width: 16px;

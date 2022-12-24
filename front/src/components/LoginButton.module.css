@@ -14,7 +14,7 @@
 }
 .buttonIcon {
   border-radius: var(--br-2xl);
-  border: 1px solid var(--white-ffffff1);
+  border: 1px solid var(--white-ffffff);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@
   cursor: pointer;
   text-align: left;
   font-size: var(--exo-2-14-regular1-size);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
   font-family: var(--exo-2-24-regular1);
 }
 @media screen and (max-width: 768px) {

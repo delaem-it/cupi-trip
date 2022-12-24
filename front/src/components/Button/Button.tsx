@@ -1,22 +1,32 @@
-import { FunctionComponent, useMemo } from 'react';
-import { Property } from 'csstype';
+import { CSSProperties, FC } from 'react';
+import clsx from 'clsx';
 import styles from './Button.module.css';
 import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 
 type ButtonType = {
-  buttonText?: string;
   iconBefore?: string;
   iconAfter?: string;
+  variant?: 'contained' | 'outlined' | 'text';
+  children?: JSX.Element | string;
+  onClick?: () => void;
   /** Style props */
-  buttonWidth?: Property.Width;
-  boxShadow?: Property.BoxShadow;
+  style?: CSSProperties;
+  className?: string;
 };
 
-const Button: FunctionComponent<ButtonType> = ({ buttonText, iconBefore, iconAfter, buttonWidth, boxShadow }) => {
+const Button: FC<ButtonType> = ({
+  iconBefore,
+  iconAfter,
+  variant = 'contained',
+  children,
+  onClick,
+  style = {},
+  className = '',
+}) => {
   return (
-    <ButtonUnstyled className={styles.button} style={{ width: buttonWidth, boxShadow: boxShadow }}>
+    <ButtonUnstyled className={clsx(styles.button, styles[variant], className)} style={{ ...style }} onClick={onClick}>
       {iconBefore && <img className={styles.icon} alt="" src={iconBefore} />}
-      {buttonText}
+      {children}
       {iconAfter && <img className={styles.icon} alt="" src={iconAfter} />}
     </ButtonUnstyled>
   );

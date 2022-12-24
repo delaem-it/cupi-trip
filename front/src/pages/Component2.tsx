@@ -126,7 +126,7 @@ const Component2: FunctionComponent = () => {
                   </div>
                   <img className={styles.icons20px} alt="" src="../icons/icons-20px4.svg" />
                 </div>
-                <Button buttonText="Найти" buttonWidth="164px" />
+                <Button style={{ width: '164px' }}>Найти</Button>
                 <div className={styles.fieldsearchmobile}>
                   <div className={styles.field7}>
                     <div className={styles.subtitleheading}>

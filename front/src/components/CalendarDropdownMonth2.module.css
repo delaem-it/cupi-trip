@@ -50,7 +50,7 @@
   justify-content: flex-start;
   gap: var(--gap-lg);
   font-size: var(--exo-2-16-medium1-size);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .div3 {
   flex: 1;
@@ -67,7 +67,7 @@
   flex-direction: row;
 }
 .div2 {
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 42px;
   flex-shrink: 0;
   padding: var(--padding-6xs);
@@ -89,8 +89,8 @@
 }
 .div17 {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
-  border: 1px solid var(--white-ffffff1);
+  background-color: var(--white-ffffff);
+  border: 1px solid var(--white-ffffff);
   box-sizing: border-box;
   height: 41px;
   display: flex;
@@ -103,7 +103,7 @@
   position: relative;
   font-size: var(--exo-2-14-regular1-size);
   font-family: var(--exo-2-24-regular1);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   text-align: center;
   display: inline-block;
   width: 18px;
@@ -111,9 +111,9 @@
 }
 .button {
   cursor: pointer;
-  border: 1px solid var(--white-ffffff1);
+  border: 1px solid var(--white-ffffff);
   padding: var(--padding-2xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   border-radius: var(--br-md);
   box-sizing: border-box;
   display: flex;
@@ -136,11 +136,11 @@
   flex-direction: row;
 }
 .dropdownData {
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   flex-direction: column;
   text-align: center;
   font-size: var(--exo-2-14-regular1-size);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
   font-family: var(--exo-2-24-regular1);
 }
 @media screen and (max-width: 1200px) {

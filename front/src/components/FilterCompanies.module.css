@@ -28,7 +28,7 @@
 }
 .list {
   flex: 1;
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   height: 224px;
   flex-direction: column;
   align-items: flex-start;
@@ -80,13 +80,13 @@
 .filter {
   position: relative;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 310px;
   height: 296px;
   flex-shrink: 0;
   overflow: hidden;
   text-align: left;
   font-size: var(--exo-2-14-regular1-size);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   font-family: var(--exo-2-24-regular1);
 }

@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .rectangleDiv {
   position: absolute;
@@ -55,7 +55,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-sm);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   border: 1px solid var(--gray-a5a7b2);
   box-sizing: border-box;
 }
@@ -192,7 +192,7 @@
 }
 .filter3 {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 310px;
   flex-direction: column;
   padding: var(--padding-xs);
@@ -237,14 +237,14 @@
 }
 .filter4 {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 310px;
   display: flex;
   flex-direction: column;
   padding: var(--padding-xs);
   justify-content: flex-start;
   gap: var(--gap-sm);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .line3 {
   width: 100%;
@@ -295,7 +295,7 @@
 }
 .list3 {
   flex: 1;
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   height: 224px;
   flex-direction: column;
   gap: var(--gap-md);
@@ -325,12 +325,12 @@
 }
 .filter6 {
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   width: 310px;
   height: 296px;
   flex-shrink: 0;
   overflow: hidden;
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .div38 {
   font-size: var(--exo-2-12-semibold1-size);
@@ -548,7 +548,7 @@
 .div59 {
   font-size: var(--exo-2-14-regular1-size);
   font-family: var(--exo-2-24-regular1);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
   text-align: center;
 }
 .button2 {
@@ -591,7 +591,7 @@
 .ticket {
   align-self: stretch;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   overflow: hidden;
   padding: var(--padding-lg);
   gap: var(--gap-0);
@@ -643,7 +643,7 @@
   gap: var(--gap-0);
   text-align: center;
   font-size: var(--exo-2-12-semibold1-size);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .div65,
 .div66 {
@@ -777,7 +777,7 @@
   flex-direction: column;
   gap: var(--gap-sm);
   font-size: var(--exo-2-12-semibold1-size);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .filtertickets {
   align-self: stretch;
@@ -863,7 +863,7 @@
 }
 .buttonIcon {
   border-radius: var(--br-2xl);
-  border: 1px solid var(--white-ffffff1);
+  border: 1px solid var(--white-ffffff);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -924,7 +924,7 @@
   justify-content: space-between;
   position: sticky;
   font-size: var(--exo-2-16-medium1-size);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
 }
 .div104 {
   position: relative;
@@ -943,7 +943,7 @@
   font-size: var(--exo-2-16-medium1-size);
   font-weight: 500;
   font-family: var(--exo-2-24-regular1);
-  color: var(--black-0000001);
+  color: var(--black-000000);
   text-align: left;
   display: inline-block;
 }
@@ -959,7 +959,7 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   flex: 1;
   border-radius: var(--br-md) 0 0 var(--br-md);
   display: flex;
@@ -977,7 +977,7 @@
 }
 .field2,
 .line19 {
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;
@@ -1013,7 +1013,7 @@
   font-size: var(--exo-2-14-regular1-size);
 }
 .div109 {
-  color: var(--black-0000001);
+  color: var(--black-000000);
   display: none;
 }
 .div109:active {
@@ -1040,7 +1040,7 @@
   cursor: pointer;
   border: 0;
   padding: var(--padding-xs);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   flex: 1;
   border-radius: var(--br-md);
   height: 67px;
@@ -1055,7 +1055,7 @@
   position: relative;
   font-size: var(--exo-2-16-medium1-size);
   font-weight: 500;
-  color: var(--black-0000001);
+  color: var(--black-000000);
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
@@ -1065,7 +1065,7 @@
 .field4 {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1102,7 +1102,7 @@
 .field5 {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   box-shadow: var(--search-field);
   display: none;
   flex-direction: row;
@@ -1111,13 +1111,13 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xs);
-  color: var(--black-0000001);
+  color: var(--black-000000);
 }
 .div114 {
   position: relative;
   font-weight: 600;
   font-family: var(--exo-2-24-regular1);
-  color: var(--white-ffffff1);
+  color: var(--white-ffffff);
   text-align: center;
   display: inline-block;
 }
@@ -1145,7 +1145,7 @@
   background-color: var(--blue-0068d9);
 }
 .field6 {
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   padding: var(--padding-xs);
   justify-content: flex-start;
   gap: var(--gap-xs);
@@ -1158,7 +1158,7 @@
 }
 .line23 {
   align-self: stretch;
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   display: flex;
   flex-direction: row;
   padding: 0 var(--padding-xs);
@@ -1180,7 +1180,7 @@
 .fieldsearchmobile {
   flex: 1;
   border-radius: var(--br-md);
-  background-color: var(--white-ffffff1);
+  background-color: var(--white-ffffff);
   box-shadow: var(--search-field);
   display: none;
   flex-direction: column;
