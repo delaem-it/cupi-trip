@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react';
-import AviacompanyLogo from '../components/AviacompanyLogo';
-import FlightRoute from '../components/FlightRoute';
-import FlightPrice from '../components/FlightPrice';
-import Button from '../components/Button';
+import AviacompanyLogo from '../AviacompanyLogo';
+import FlightRoute from '../FlightRoute';
+import FlightPrice from '../FlightPrice';
+import Button from '../Button';
 import styles from './Ticket.module.css';
 
 type TicketType = {
