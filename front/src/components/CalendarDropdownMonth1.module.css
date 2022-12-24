@@ -195,7 +195,7 @@
   justify-content: center;
 }
 .button25:hover {
-  background-color: var(--color-indigo-200);
+  background-color: var(--blue-0068d9);
   width: fix;
 }
 .button24,

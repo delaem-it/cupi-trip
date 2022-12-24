@@ -1,18 +1,18 @@
-import { FunctionComponent } from "react";
-import HeaderCatalogTickets from "../components/HeaderCatalogTickets";
-import FilterSidebar from "../components/FilterSidebar";
-import Ticket from "../components/Ticket";
-import AviacompanyLogo from "../components/AviacompanyLogo";
-import Waytime from "../components/Waytime";
-import ButtonWithIconAfter from "../components/ButtonWithIconAfter";
-import FlightTimePortDetails from "../components/FlightTimePortDetails";
-import FlightArrow from "../components/FlightArrow";
-import FlightDuration from "../components/FlightDuration";
-import FlightTransfer from "../components/FlightTransfer";
-import FlightPortDetails from "../components/FlightPortDetails";
-import Button from "../components/Button";
-import Footer from "../components/Footer";
-import styles from "./Component.module.css";
+import { FunctionComponent } from 'react';
+import HeaderCatalogTickets from '../components/HeaderCatalogTickets';
+import FilterSidebar from '../components/FilterSidebar';
+import Ticket from '../components/Ticket';
+import AviacompanyLogo from '../components/AviacompanyLogo';
+import Waytime from '../components/Waytime';
+import ButtonWithIconAfter from '../components/ButtonWithIconAfter';
+import FlightTimePortDetails from '../components/FlightTimePortDetails';
+import FlightArrow from '../components/FlightArrow';
+import FlightDuration from '../components/FlightDuration';
+import FlightTransfer from '../components/FlightTransfer';
+import FlightPortDetails from '../components/FlightPortDetails';
+import Button from '../components/Button';
+import Footer from '../components/Footer';
+import styles from './Component.module.css';
 
 const Component: FunctionComponent = () => {
   return (
@@ -23,11 +23,7 @@ const Component: FunctionComponent = () => {
           <FilterSidebar />
           <div className={styles.tickets1}>
             <button className={styles.button}>
-              <img
-                className={styles.icons16px}
-                alt=""
-                src="../icons/icons-16px10.svg"
-              />
+              <img className={styles.icons16px} alt="" src="../icons/icons-16px10.svg" />
               <div className={styles.div1}>Фильтр</div>
             </button>
             <Ticket
@@ -39,10 +35,7 @@ const Component: FunctionComponent = () => {
             />
             <div className={styles.ticket}>
               <div className={styles.waytimeavia}>
-                <AviacompanyLogo
-                  logo="../icons/logo2.svg"
-                  companyName="Nordwind"
-                />
+                <AviacompanyLogo logo="../icons/logo2.svg" companyName="Nordwind" />
                 <Waytime
                   dateFrom="11:12"
                   timeFrom="23 ноября, Ср"
@@ -62,35 +55,20 @@ const Component: FunctionComponent = () => {
                     <div className={styles.div3}>Забронировать</div>
                   </button>
                 </div>
-                <ButtonWithIconAfter
-                  reviewText="Детали перелета"
-                  icons16px="../icons/icons-16px18.svg"
-                />
+                <ButtonWithIconAfter reviewText="Детали перелета" icons16px="../icons/icons-16px18.svg" />
               </div>
             </div>
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo2.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime}>
                   <div className={styles.way}>
-                    <FlightTimePortDetails
-                      date="20:10"
-                      time="23 ноября, Ср"
-                      airport="Москва, Внуково (VKO) "
-                    />
+                    <FlightTimePortDetails date="20:10" time="23 ноября, Ср" airport="Москва, Внуково (VKO) " />
                     <FlightArrow />
-                    <FlightTimePortDetails
-                      date="22:41"
-                      time="24 ноября, Ср"
-                      airport="Саратов, Гагарин (GSV)"
-                    />
+                    <FlightTimePortDetails date="22:41" time="24 ноября, Ср" airport="Саратов, Гагарин (GSV)" />
                   </div>
                   <div className={styles.timestatus}>
                     <FlightDuration duration="5 ч 31 мин" />
@@ -128,20 +106,13 @@ const Component: FunctionComponent = () => {
                   <div className={styles.div2}>9 985 ₽</div>
                   <Button buttonText="Забронировать" />
                 </div>
-                <ButtonWithIconAfter
-                  reviewText="Cкрыть детали"
-                  icons16px="../icons/icons-16px20.svg"
-                />
+                <ButtonWithIconAfter reviewText="Cкрыть детали" icons16px="../icons/icons-16px20.svg" />
               </div>
             </div>
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo10.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo10.svg" />
                   <div className={styles.div4}>Turkish airlines</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -151,30 +122,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -194,11 +153,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo4.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo4.svg" />
                   <div className={styles.div4}>SAS</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -208,30 +163,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -251,11 +194,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo5.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
                   <div className={styles.div4}>Qatar Airways</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -265,30 +204,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -308,11 +235,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo13.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo13.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -322,30 +245,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -365,11 +276,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo2.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -379,47 +286,27 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>11:12</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line4}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-2721.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-2721.svg" />
                       <div className={styles.pointTransfer}>
                         <div className={styles.tagTransfer}>
                           <div className={styles.price}>
                             <div className={styles.div40}>от 600 ₽</div>
                           </div>
-                          <img
-                            className={styles.vectorIcon9}
-                            alt=""
-                            src="../icons/vector-167.svg"
-                          />
+                          <img className={styles.vectorIcon9} alt="" src="../icons/vector-167.svg" />
                         </div>
-                        <img
-                          className={styles.pointTransferIcon}
-                          alt=""
-                          src="../icons/point-transfer.svg"
-                        />
+                        <img className={styles.pointTransferIcon} alt="" src="../icons/point-transfer.svg" />
                       </div>
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-2711.svg"
-                      />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-2711.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>24 ноября, Ср</div>
                         <span className={styles.span}>05:22</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -438,22 +325,14 @@ const Component: FunctionComponent = () => {
                 </div>
                 <div className={styles.arrowFuther}>
                   <button className={styles.reviewText}>Детали перелета</button>
-                  <img
-                    className={styles.icons16px}
-                    alt=""
-                    src="../icons/icons-16px18.svg"
-                  />
+                  <img className={styles.icons16px} alt="" src="../icons/icons-16px18.svg" />
                 </div>
               </div>
             </div>
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo15.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo15.svg" />
                   <div className={styles.div4}>Turkish airlines</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -463,30 +342,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -506,11 +373,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo16.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo16.svg" />
                   <div className={styles.div4}>SAS</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -520,30 +383,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -563,11 +414,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo5.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
                   <div className={styles.div4}>Qatar Airways</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -577,30 +424,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -620,11 +455,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo18.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo18.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -634,30 +465,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -677,11 +496,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo2.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -691,47 +506,27 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>11:12</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line4}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-2721.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-2721.svg" />
                       <div className={styles.pointTransfer}>
                         <div className={styles.tagTransfer}>
                           <div className={styles.price}>
                             <div className={styles.div40}>от 600 ₽</div>
                           </div>
-                          <img
-                            className={styles.vectorIcon9}
-                            alt=""
-                            src="../icons/vector-167.svg"
-                          />
+                          <img className={styles.vectorIcon9} alt="" src="../icons/vector-167.svg" />
                         </div>
-                        <img
-                          className={styles.pointTransferIcon}
-                          alt=""
-                          src="../icons/point-transfer.svg"
-                        />
+                        <img className={styles.pointTransferIcon} alt="" src="../icons/point-transfer.svg" />
                       </div>
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-2711.svg"
-                      />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-2711.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>24 ноября, Ср</div>
                         <span className={styles.span}>05:22</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -750,22 +545,14 @@ const Component: FunctionComponent = () => {
                 </div>
                 <div className={styles.arrowFuther}>
                   <button className={styles.reviewText}>Детали перелета</button>
-                  <img
-                    className={styles.icons16px}
-                    alt=""
-                    src="../icons/icons-16px18.svg"
-                  />
+                  <img className={styles.icons16px} alt="" src="../icons/icons-16px18.svg" />
                 </div>
               </div>
             </div>
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo20.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo20.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -775,30 +562,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -818,11 +593,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo2.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -832,47 +603,27 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>11:12</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line4}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-2721.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-2721.svg" />
                       <div className={styles.pointTransfer}>
                         <div className={styles.tagTransfer}>
                           <div className={styles.price}>
                             <div className={styles.div40}>от 600 ₽</div>
                           </div>
-                          <img
-                            className={styles.vectorIcon9}
-                            alt=""
-                            src="../icons/vector-167.svg"
-                          />
+                          <img className={styles.vectorIcon9} alt="" src="../icons/vector-167.svg" />
                         </div>
-                        <img
-                          className={styles.pointTransferIcon}
-                          alt=""
-                          src="../icons/point-transfer.svg"
-                        />
+                        <img className={styles.pointTransferIcon} alt="" src="../icons/point-transfer.svg" />
                       </div>
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-2711.svg"
-                      />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-2711.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>24 ноября, Ср</div>
                         <span className={styles.span}>05:22</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -891,22 +642,14 @@ const Component: FunctionComponent = () => {
                 </div>
                 <div className={styles.arrowFuther}>
                   <button className={styles.reviewText}>Детали перелета</button>
-                  <img
-                    className={styles.icons16px}
-                    alt=""
-                    src="../icons/icons-16px18.svg"
-                  />
+                  <img className={styles.icons16px} alt="" src="../icons/icons-16px18.svg" />
                 </div>
               </div>
             </div>
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo22.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo22.svg" />
                   <div className={styles.div4}>Turkish airlines</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -916,30 +659,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -959,11 +690,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo16.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo16.svg" />
                   <div className={styles.div4}>SAS</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -973,30 +700,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -1016,11 +731,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo5.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
                   <div className={styles.div4}>Qatar Airways</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -1030,30 +741,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -1073,11 +772,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo25.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo25.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -1087,30 +782,18 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>20:10</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-272.svg"
-                      />
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-271.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-272.svg" />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-271.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>22:41</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -1130,11 +813,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon}
-                    alt=""
-                    src="../icons/logo2.svg"
-                  />
+                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -1144,47 +823,27 @@ const Component: FunctionComponent = () => {
                         <div className={styles.div6}>23 ноября, Ср</div>
                         <span className={styles.span}>11:12</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line4}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-2721.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-2721.svg" />
                       <div className={styles.pointTransfer}>
                         <div className={styles.tagTransfer}>
                           <div className={styles.price}>
                             <div className={styles.div40}>от 600 ₽</div>
                           </div>
-                          <img
-                            className={styles.vectorIcon9}
-                            alt=""
-                            src="../icons/vector-167.svg"
-                          />
+                          <img className={styles.vectorIcon9} alt="" src="../icons/vector-167.svg" />
                         </div>
-                        <img
-                          className={styles.pointTransferIcon}
-                          alt=""
-                          src="../icons/point-transfer.svg"
-                        />
+                        <img className={styles.pointTransferIcon} alt="" src="../icons/point-transfer.svg" />
                       </div>
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-2711.svg"
-                      />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-2711.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv}>
                         <div className={styles.div6}>24 ноября, Ср</div>
                         <span className={styles.span}>05:22</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus1}>
@@ -1203,38 +862,34 @@ const Component: FunctionComponent = () => {
                 </div>
                 <div className={styles.arrowFuther}>
                   <button className={styles.reviewText}>Детали перелета</button>
-                  <img
-                    className={styles.icons16px}
-                    alt=""
-                    src="../icons/icons-16px18.svg"
-                  />
+                  <img className={styles.icons16px} alt="" src="../icons/icons-16px18.svg" />
                 </div>
               </div>
             </div>
-            <ButtonWithIconAfter
-              reviewText="Показать ещё"
-              icons16px="../icons/icons-12px.svg"
-              arrowFutherJustifyContent="center"
-              arrowFutherGap="var(--gap-xs)"
-              arrowFutherCursor="pointer"
-              arrowFutherBorder="1px solid var(--gray-d5d7e2)"
-              arrowFutherPadding="var(--padding-sm) var(--padding-lg)"
-              arrowFutherBackgroundColor="transparent"
-              arrowFutherAlignSelf="stretch"
-              arrowFutherBorderRadius="var(--br-md)"
-              arrowFutherBoxSizing="border-box"
-              arrowFutherTransition="color 0.2s"
-              reviewTextCursor="unset"
-              reviewTextBorder="unset"
-              reviewTextPadding="unset"
-              reviewTextBackgroundColor="unset"
-              reviewTextFontSize="var(--exo-2-16-semibold-size)"
-              reviewTextColor="var(--gray-33343a)"
-              reviewTextTextAlign="center"
-              reviewTextTransition="unset"
-              icons16pxWidth="12px"
-              icons16pxHeight="12px"
-              icons16pxOverflow="hidden"
+            <Button
+              buttonText="Показать ещё"
+              iconAfter="../icons/icons-12px.svg"
+              // arrowFutherJustifyContent="center"
+              // arrowFutherGap="var(--gap-xs)"
+              // arrowFutherCursor="pointer"
+              // arrowFutherBorder="1px solid var(--gray-d5d7e2)"
+              // arrowFutherPadding="var(--padding-sm) var(--padding-lg)"
+              // arrowFutherBackgroundColor="transparent"
+              // arrowFutherAlignSelf="stretch"
+              // arrowFutherBorderRadius="var(--br-md)"
+              // arrowFutherBoxSizing="border-box"
+              // arrowFutherTransition="color 0.2s"
+              // reviewTextCursor="unset"
+              // reviewTextBorder="unset"
+              // reviewTextPadding="unset"
+              // reviewTextBackgroundColor="unset"
+              // reviewTextFontSize="var(--exo-2-16-semibold-size)"
+              // reviewTextColor="var(--gray-33343a)"
+              // reviewTextTextAlign="center"
+              // reviewTextTransition="unset"
+              // icons16pxWidth="12px"
+              // icons16pxHeight="12px"
+              // icons16pxOverflow="hidden"
             />
           </div>
         </div>

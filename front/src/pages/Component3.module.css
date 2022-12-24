@@ -316,7 +316,7 @@
   transition: background-color 0.2s;
 }
 .button:hover {
-  background-color: var(--color-indigo-200);
+  background-color: var(--blue-0068d9);
 }
 .field7 {
   background-color: var(--white-ffffff1);

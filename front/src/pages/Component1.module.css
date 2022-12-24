@@ -28,7 +28,7 @@
   gap: var(--gap-xs);
 }
 .button:hover {
-  border: 1px solid var(--color-indigo-200);
+  border: 1px solid var(--blue-0068d9);
   box-sizing: border-box;
 }
 .div2 {
@@ -382,7 +382,7 @@
   display: inline-block;
 }
 .reviewText:hover {
-  color: var(--color-indigo-200);
+  color: var(--blue-0068d9);
   transition: background-color 0.2s;
 }
 .arrowFuther,
@@ -566,7 +566,7 @@
   transition: background-color 0.1s;
 }
 .button2:hover {
-  background-color: var(--color-indigo-200);
+  background-color: var(--blue-0068d9);
 }
 .price6,
 .pricebutton,
@@ -682,7 +682,7 @@
   transition: background-color 0.2s;
 }
 .reviewText1:hover {
-  color: var(--color-indigo-200);
+  color: var(--blue-0068d9);
 }
 .arrowFuther1 {
   display: flex;
@@ -1146,7 +1146,7 @@
   transition: background-color 0.2s;
 }
 .button9:hover {
-  background-color: var(--color-indigo-200);
+  background-color: var(--blue-0068d9);
 }
 .div116 {
   position: relative;

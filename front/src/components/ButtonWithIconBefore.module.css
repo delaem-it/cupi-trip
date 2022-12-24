@@ -21,7 +21,7 @@
   display: inline-block;
 }
 .reviewText:hover {
-  color: var(--color-indigo-200);
+  color: var(--blue-0068d9);
   transition: background-color 0.2s;
 }
 .arrowFuther {

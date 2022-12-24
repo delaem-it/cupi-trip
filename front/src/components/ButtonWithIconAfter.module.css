@@ -13,7 +13,7 @@
   transition: background-color 0.2s;
 }
 .reviewText:hover {
-  color: var(--color-indigo-200);
+  color: var(--blue-0068d9);
 }
 .icons16px {
   position: relative;

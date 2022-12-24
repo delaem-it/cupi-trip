@@ -1,7 +1,7 @@
-import { FunctionComponent } from "react";
-import InfoMessage from "../components/InfoMessage";
-import Button from "../components/Button";
-import styles from "./SearchMessage.module.css";
+import { FunctionComponent } from 'react';
+import InfoMessage from '../components/InfoMessage';
+import Button from '../components/Button';
+import styles from './SearchMessage.module.css';
 
 const SearchMessage: FunctionComponent = () => {
   return (
@@ -14,12 +14,7 @@ const SearchMessage: FunctionComponent = () => {
           componentColor="var(--gray-81838e)"
         />
       </div>
-      <Button
-        buttonText="Сбросить фильтр"
-        buttonPadding="var(--padding-md) var(--padding-xl)"
-        buttonWidth="196px"
-        buttonAlignSelf="unset"
-      />
+      <Button buttonText="Сбросить фильтр" buttonWidth="196px" boxShadow="var(--search-field)" />
     </div>
   );
 };

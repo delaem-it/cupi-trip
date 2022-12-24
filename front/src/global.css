@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
 
 body {
   margin: 0;
@@ -6,7 +6,7 @@ body {
 }
 :root {
   /* fonts */
-  --exo-2-24-regular1: "Exo 2";
+  --exo-2-24-regular1: 'Exo 2';
 
   /* font sizes */
   --exo-2-12-semibold1-size: 12px;
@@ -17,7 +17,7 @@ body {
 
   /* Colors */
   --blue-007aff1: #007aff;
-  --color-indigo-200: #0068d9;
+  --blue-0068d9: #0068d9;
   --blue-bfdeff: #bfdeff;
   --blue-e5f2ff: #e5f2ff;
 
