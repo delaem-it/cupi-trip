@@ -1,13 +1,13 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
-import "./global.css";
-import { ThemeProvider } from "@mui/system";
-import { theme } from "./styles/theme";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import './global.scss';
+import { ThemeProvider } from '@mui/system';
+import { theme } from './styles/theme';
 
-const container = document.getElementById("root");
+const container = document.getElementById('root');
 const root = createRoot(container!);
 
 root.render(
