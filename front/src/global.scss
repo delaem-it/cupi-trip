@@ -3,18 +3,18 @@
 body {
   margin: 0;
   line-height: normal;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 :root {
   /* fonts */
-  --exo-2-24-regular1: 'Exo 2';
+  --exo-2-24-regular: 'Exo 2';
 
   /* font sizes */
-  --exo-2-12-semibold1-size: 12px;
-  --exo-2-14-regular1-size: 14px;
-  --exo-2-16-medium1-size: 16px;
-  --exo-2-20-semibold1-size: 20px;
-  --exo-2-24-regular1-size: 24px;
+  --exo-2-12-size: 12px;
+  --exo-2-14-size: 14px;
+  --exo-2-16-size: 16px;
+  --exo-2-20-size: 20px;
+  --exo-2-24-size: 24px;
 
   /* Colors */
   --blue-007aff1: #007aff;

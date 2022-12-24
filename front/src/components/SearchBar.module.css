@@ -37,7 +37,7 @@
   text-overflow: ellipsis;
 }
 .div1 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
 }
 .subtitleheading {
@@ -77,7 +77,7 @@
   display: inline-block;
 }
 .div3 {
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 500;
   color: var(--black-000000);
   white-space: nowrap;
@@ -147,7 +147,7 @@
   display: none;
   flex-direction: column;
   justify-content: center;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
 }
 .searchFieldbutton {
@@ -161,9 +161,9 @@
   gap: var(--gap-2xs);
   position: sticky;
   text-align: left;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   color: var(--black-000000);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 @media screen and (max-width: 768px) {
   .field {

@@ -1,9 +1,9 @@
-import { FunctionComponent, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
-import Tooltip from "../components/Tooltip";
-import Ticket from "../components/Ticket";
-import TicketVariant from "../components/TicketVariant";
-import styles from "./Component10.module.css";
+import { FunctionComponent, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Tooltip from '../components/Tooltip';
+import Ticket from '../components/Ticket/Ticket';
+import TicketVariant from '../components/TicketVariant';
+import styles from './Component10.module.css';
 
 const Component10: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -13,23 +13,23 @@ const Component10: FunctionComponent = () => {
   }, []);
 
   const onField1Click = useCallback(() => {
-    navigate("/");
+    navigate('/');
   }, [navigate]);
 
   const onField2Click = useCallback(() => {
-    navigate("/1");
+    navigate('/1');
   }, [navigate]);
 
   const onField3Click = useCallback(() => {
-    navigate("/2");
+    navigate('/2');
   }, [navigate]);
 
   const onField4Click = useCallback(() => {
-    navigate("/3");
+    navigate('/3');
   }, [navigate]);
 
   const onButtonClick = useCallback(() => {
-    navigate("/4");
+    navigate('/4');
   }, [navigate]);
 
   return (
@@ -37,11 +37,7 @@ const Component10: FunctionComponent = () => {
       <div className={styles.tickets}>
         <div className={styles.headerCatalogTickets}>
           <div className={styles.gradientHome}>
-            <img
-              className={styles.headerhome1Icon}
-              alt=""
-              src="../headerhome-1@2x.png"
-            />
+            <img className={styles.headerhome1Icon} alt="" src="../headerhome-1@2x.png" />
           </div>
           <div className={styles.home}>
             <header className={styles.header}>
@@ -64,33 +60,14 @@ const Component10: FunctionComponent = () => {
                 </div>
               </div>
               <div className={styles.buttonHeader}>
-                <div
-                  className={styles.buttonIcon}
-                  onClick={onButtonIconContainerClick}
-                >
-                  <img
-                    className={styles.icons24px}
-                    alt=""
-                    src="../icons/icons-24px10.svg"
-                  />
+                <div className={styles.buttonIcon} onClick={onButtonIconContainerClick}>
+                  <img className={styles.icons24px} alt="" src="../icons/icons-24px10.svg" />
                   <div className={styles.div1}>Войти</div>
                 </div>
                 <button className={styles.icons24px1}>
-                  <img
-                    className={styles.vector194Stroke}
-                    alt=""
-                    src="../icons/vector-194-stroke.svg"
-                  />
-                  <img
-                    className={styles.vector195Stroke}
-                    alt=""
-                    src="../icons/vector-194-stroke.svg"
-                  />
-                  <img
-                    className={styles.vector196Stroke}
-                    alt=""
-                    src="../icons/vector-194-stroke.svg"
-                  />
+                  <img className={styles.vector194Stroke} alt="" src="../icons/vector-194-stroke.svg" />
+                  <img className={styles.vector195Stroke} alt="" src="../icons/vector-194-stroke.svg" />
+                  <img className={styles.vector196Stroke} alt="" src="../icons/vector-194-stroke.svg" />
                 </button>
               </div>
             </header>
@@ -102,11 +79,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div2}>Откуда</div>
                       <div className={styles.div3}>Москва</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </button>
                   <div className={styles.line}>
                     <div className={styles.rectangleDiv} />
@@ -116,11 +89,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div4}>Куда</div>
                       <div className={styles.div5}>Рим</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </div>
                   <div className={styles.line}>
                     <div className={styles.rectangleDiv} />
@@ -130,11 +99,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div2}>Дата туда</div>
                       <div className={styles.div3}>23 мая</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </button>
                   <div className={styles.line}>
                     <div className={styles.rectangleDiv} />
@@ -144,11 +109,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div2}>Дата обратно</div>
                       <div className={styles.div3}>24 мая</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </button>
                   <div className={styles.line}>
                     <div className={styles.rectangleDiv} />
@@ -158,25 +119,15 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div4}>Пассажиры, класс</div>
                       <div className={styles.div5}>1 пассажир</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </div>
                 </div>
                 <div className={styles.field6}>
                   <div className={styles.subtitleheading}>
                     <div className={styles.div12}>Москва - Рим</div>
-                    <div className={styles.div13}>
-                      23 ноября - 24 ноября, 1 пассажир, Эконом
-                    </div>
+                    <div className={styles.div13}>23 ноября - 24 ноября, 1 пассажир, Эконом</div>
                   </div>
-                  <img
-                    className={styles.icons20px}
-                    alt=""
-                    src="../icons/icons-20px26.svg"
-                  />
+                  <img className={styles.icons20px} alt="" src="../icons/icons-20px26.svg" />
                 </div>
                 <button className={styles.button} onClick={onButtonClick}>
                   <div className={styles.div14}>Найти</div>
@@ -187,11 +138,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div4}>Откуда</div>
                       <div className={styles.div5}>Москва</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </div>
                   <div className={styles.line4}>
                     <div className={styles.rectangleDiv4} />
@@ -201,11 +148,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div4}>Куда</div>
                       <div className={styles.div5}>Рим</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </div>
                   <div className={styles.line4}>
                     <div className={styles.rectangleDiv4} />
@@ -216,11 +159,7 @@ const Component10: FunctionComponent = () => {
                         <div className={styles.div4}>Дата туда</div>
                         <div className={styles.div5}>23 мая</div>
                       </div>
-                      <img
-                        className={styles.icons16px}
-                        alt=""
-                        src="../icons/icons-16px7.svg"
-                      />
+                      <img className={styles.icons16px} alt="" src="../icons/icons-16px7.svg" />
                     </div>
                     <div className={styles.line}>
                       <div className={styles.rectangleDiv} />
@@ -230,11 +169,7 @@ const Component10: FunctionComponent = () => {
                         <div className={styles.div4}>Дата обратно</div>
                         <div className={styles.div5}>24 мая</div>
                       </div>
-                      <img
-                        className={styles.icons16px}
-                        alt=""
-                        src="../icons/icons-16px.svg"
-                      />
+                      <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                     </div>
                   </div>
                   <div className={styles.line4}>
@@ -245,11 +180,7 @@ const Component10: FunctionComponent = () => {
                       <div className={styles.div4}>Пассажиры, класс</div>
                       <div className={styles.div5}>1 пассажир</div>
                     </div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px.svg" />
                   </div>
                 </div>
               </div>
@@ -259,11 +190,7 @@ const Component10: FunctionComponent = () => {
         <div className={styles.filtertickets}>
           <div className={styles.filter}>
             <button className={styles.button1}>
-              <img
-                className={styles.icons16px}
-                alt=""
-                src="../icons/icons-16px10.svg"
-              />
+              <img className={styles.icons16px} alt="" src="../icons/icons-16px10.svg" />
               <div className={styles.div25}>Фильтр</div>
             </button>
             <div className={styles.filter1}>
@@ -271,11 +198,7 @@ const Component10: FunctionComponent = () => {
                 <div className={styles.filter3}>
                   <div className={styles.nameFilter}>
                     <div className={styles.div26}>Цена</div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px11.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
                   </div>
                   <div className={styles.filterLists}>
                     <div className={styles.list}>
@@ -318,16 +241,8 @@ const Component10: FunctionComponent = () => {
                         <div className={styles.rectangleDiv13} />
                       </div>
                       <div className={styles.point}>
-                        <img
-                          className={styles.bulletIcon}
-                          alt=""
-                          src="../icons/bullet.svg"
-                        />
-                        <img
-                          className={styles.bulletIcon}
-                          alt=""
-                          src="../icons/bullet.svg"
-                        />
+                        <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
+                        <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
                       </div>
                     </div>
                   </div>
@@ -335,11 +250,7 @@ const Component10: FunctionComponent = () => {
                 <div className={styles.filter4}>
                   <div className={styles.nameFilter1}>
                     <div className={styles.div26}>Пересадки</div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px11.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
                   </div>
                   <div className={styles.filterLists1}>
                     <div className={styles.list}>
@@ -382,11 +293,7 @@ const Component10: FunctionComponent = () => {
                 <div className={styles.filter3}>
                   <div className={styles.nameFilter}>
                     <div className={styles.div26}>Длительность пересадки</div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px11.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
                   </div>
                   <div className={styles.filterLists}>
                     <div className={styles.list}>
@@ -429,16 +336,8 @@ const Component10: FunctionComponent = () => {
                         <div className={styles.rectangleDiv13} />
                       </div>
                       <div className={styles.point1}>
-                        <img
-                          className={styles.bulletIcon}
-                          alt=""
-                          src="../icons/bullet.svg"
-                        />
-                        <img
-                          className={styles.bulletIcon}
-                          alt=""
-                          src="../icons/bullet.svg"
-                        />
+                        <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
+                        <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
                       </div>
                     </div>
                   </div>
@@ -446,11 +345,7 @@ const Component10: FunctionComponent = () => {
                 <div className={styles.filter6}>
                   <div className={styles.nameFilter3}>
                     <div className={styles.div26}>Авиакомпании</div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px11.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
                   </div>
                   <div className={styles.filterLists3}>
                     <div className={styles.list3}>
@@ -458,77 +353,49 @@ const Component10: FunctionComponent = () => {
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo.svg" />
                         <div className={styles.div4}>Победа</div>
                       </div>
                       <div className={styles.checkbox4}>
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo112.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo112.svg" />
                         <div className={styles.div4}>S7 Airlines</div>
                       </div>
                       <div className={styles.checkbox4}>
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo2.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
                         <div className={styles.div4}>Nordwind</div>
                       </div>
                       <div className={styles.checkbox4}>
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo114.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo114.svg" />
                         <div className={styles.div4}>Turkish airlines</div>
                       </div>
                       <div className={styles.checkbox4}>
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo4.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo4.svg" />
                         <div className={styles.div4}>SAS</div>
                       </div>
                       <div className={styles.checkbox4}>
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo5.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
                         <div className={styles.div4}>Qatar Airways</div>
                       </div>
                       <div className={styles.checkbox4}>
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img
-                          className={styles.logoIcon}
-                          alt=""
-                          src="../icons/logo117.svg"
-                        />
+                        <img className={styles.logoIcon} alt="" src="../icons/logo117.svg" />
                         <div className={styles.div4}>Lufthansa</div>
                       </div>
                       <div className={styles.checkbox4}>
@@ -559,11 +426,7 @@ const Component10: FunctionComponent = () => {
                 <div className={styles.filter7}>
                   <div className={styles.nameFilter}>
                     <div className={styles.div26}>Вылет и прибытие</div>
-                    <img
-                      className={styles.icons16px}
-                      alt=""
-                      src="../icons/icons-16px11.svg"
-                    />
+                    <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
                   </div>
                   <div className={styles.filterLists}>
                     <div className={styles.list}>
@@ -611,24 +474,14 @@ const Component10: FunctionComponent = () => {
                           <div className={styles.rectangleDiv13} />
                         </div>
                         <div className={styles.point}>
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
                         </div>
                       </div>
                     </div>
                     <div className={styles.lineFilter}>
                       <div className={styles.frameDiv}>
-                        <div className={styles.div4}>
-                          Прибытие в Санкт-Петербург
-                        </div>
+                        <div className={styles.div4}>Прибытие в Санкт-Петербург</div>
                         <div className={styles.price2}>
                           <div className={styles.div31}>00:00</div>
                           <div className={styles.div32}>12:00</div>
@@ -639,16 +492,8 @@ const Component10: FunctionComponent = () => {
                           <div className={styles.rectangleDiv13} />
                         </div>
                         <div className={styles.point1}>
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
                         </div>
                       </div>
                     </div>
@@ -657,9 +502,7 @@ const Component10: FunctionComponent = () => {
                     <div className={styles.div62}>ОБРАТНО</div>
                     <div className={styles.lineFilter}>
                       <div className={styles.frameDiv}>
-                        <div className={styles.div4}>
-                          Вылет из Санкт-Петербург
-                        </div>
+                        <div className={styles.div4}>Вылет из Санкт-Петербург</div>
                         <div className={styles.price2}>
                           <div className={styles.div31}>00:00</div>
                           <div className={styles.div32}>12:00</div>
@@ -670,16 +513,8 @@ const Component10: FunctionComponent = () => {
                           <div className={styles.rectangleDiv13} />
                         </div>
                         <div className={styles.point1}>
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
                         </div>
                       </div>
                     </div>
@@ -696,16 +531,8 @@ const Component10: FunctionComponent = () => {
                           <div className={styles.rectangleDiv13} />
                         </div>
                         <div className={styles.point1}>
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
-                          <img
-                            className={styles.bulletIcon}
-                            alt=""
-                            src="../icons/bullet.svg"
-                          />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
+                          <img className={styles.bulletIcon} alt="" src="../icons/bullet.svg" />
                         </div>
                       </div>
                     </div>
@@ -714,31 +541,19 @@ const Component10: FunctionComponent = () => {
               </div>
             </div>
             <button className={styles.arrowFuther}>
-              <img
-                className={styles.icons16px}
-                alt=""
-                src="../icons/icons-16px16.svg"
-              />
+              <img className={styles.icons16px} alt="" src="../icons/icons-16px16.svg" />
               <button className={styles.reviewText}>Сбросить фильтр</button>
             </button>
           </div>
           <div className={styles.tickets1}>
             <button className={styles.button1}>
-              <img
-                className={styles.icons16px}
-                alt=""
-                src="../icons/icons-16px10.svg"
-              />
+              <img className={styles.icons16px} alt="" src="../icons/icons-16px10.svg" />
               <div className={styles.div25}>Фильтр</div>
             </button>
             <div className={styles.ticket}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img
-                    className={styles.logoIcon7}
-                    alt=""
-                    src="../icons/logo2.svg"
-                  />
+                  <img className={styles.logoIcon7} alt="" src="../icons/logo2.svg" />
                   <div className={styles.div77}>Nordwind</div>
                 </div>
                 <div className={styles.waytime}>
@@ -748,38 +563,22 @@ const Component10: FunctionComponent = () => {
                         <div className={styles.div78}>23 ноября, Ср</div>
                         <span className={styles.span}>11:12</span>
                       </div>
-                      <div
-                        className={styles.vKO}
-                      >{`Москва, Внуково (VKO) `}</div>
+                      <div className={styles.vKO}>{`Москва, Внуково (VKO) `}</div>
                     </div>
                     <div className={styles.line20}>
-                      <img
-                        className={styles.vectorIcon}
-                        alt=""
-                        src="../icons/vector-2721.svg"
-                      />
+                      <img className={styles.vectorIcon} alt="" src="../icons/vector-2721.svg" />
                       <div className={styles.pointTransfer}>
                         <Tooltip />
-                        <img
-                          className={styles.pointTransferIcon}
-                          alt=""
-                          src="../icons/point-transfer11.svg"
-                        />
+                        <img className={styles.pointTransferIcon} alt="" src="../icons/point-transfer11.svg" />
                       </div>
-                      <img
-                        className={styles.vectorIcon1}
-                        alt=""
-                        src="../icons/vector-2711.svg"
-                      />
+                      <img className={styles.vectorIcon1} alt="" src="../icons/vector-2711.svg" />
                     </div>
                     <div className={styles.timesubtitle}>
                       <div className={styles.frameDiv4}>
                         <div className={styles.div78}>24 ноября, Ср</div>
                         <span className={styles.span}>05:22</span>
                       </div>
-                      <div className={styles.vKO}>
-                        Санкт-Петербург, Пулково (LED)
-                      </div>
+                      <div className={styles.vKO}>Санкт-Петербург, Пулково (LED)</div>
                     </div>
                   </div>
                   <div className={styles.timestatus}>
@@ -797,14 +596,8 @@ const Component10: FunctionComponent = () => {
                   </button>
                 </div>
                 <div className={styles.arrowFuther1}>
-                  <button className={styles.reviewText1}>
-                    Детали перелета
-                  </button>
-                  <img
-                    className={styles.icons16px}
-                    alt=""
-                    src="../icons/icons-16px18.svg"
-                  />
+                  <button className={styles.reviewText1}>Детали перелета</button>
+                  <img className={styles.icons16px} alt="" src="../icons/icons-16px18.svg" />
                 </div>
               </div>
             </div>

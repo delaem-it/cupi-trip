@@ -6,9 +6,9 @@
 }
 .div1 {
   position: relative;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--blue-007aff1);
   text-align: center;
   display: inline-block;
@@ -333,7 +333,7 @@
   color: var(--black-000000);
 }
 .div38 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
   display: inline-block;
   width: 139px;
@@ -374,9 +374,9 @@
   padding: 0;
   background-color: transparent;
   position: relative;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--blue-007aff1);
   text-align: justify;
   display: inline-block;
@@ -436,7 +436,7 @@
   align-self: stretch;
 }
 .span {
-  font-size: var(--exo-2-24-regular1-size);
+  font-size: var(--exo-2-24-size);
 }
 .frameDiv4,
 .span,
@@ -498,7 +498,7 @@
   display: inline-block;
 }
 .div57 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   font-weight: 600;
   color: var(--green-60b56e);
 }
@@ -507,7 +507,7 @@
   flex-shrink: 0;
   flex-direction: column;
   gap: var(--gap-2xs);
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
 }
 .timestatus,
 .waytime,
@@ -520,7 +520,7 @@
   align-self: stretch;
   flex-direction: row;
   gap: var(--gap-lg);
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
 }
 .waytimeavia {
   flex: 1;
@@ -546,8 +546,8 @@
   align-self: stretch;
 }
 .div59 {
-  font-size: var(--exo-2-14-regular1-size);
-  font-family: var(--exo-2-24-regular1);
+  font-size: var(--exo-2-14-size);
+  font-family: var(--exo-2-24-regular);
   color: var(--white-ffffff);
   text-align: center;
 }
@@ -582,7 +582,7 @@
   flex-direction: column;
   padding: 0 0 0 var(--padding-lg);
   gap: var(--gap-sm);
-  font-size: var(--exo-2-20-semibold1-size);
+  font-size: var(--exo-2-20-size);
 }
 .price6,
 .ticket {
@@ -642,7 +642,7 @@
   justify-content: flex-start;
   gap: var(--gap-0);
   text-align: center;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--white-ffffff);
 }
 .div65,
@@ -652,7 +652,7 @@
   display: inline-block;
 }
 .div65 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--orange-ffa6201);
 }
 .div66 {
@@ -673,9 +673,9 @@
   padding: 0;
   background-color: transparent;
   position: relative;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--blue-007aff1);
   text-align: justify;
   display: inline-block;
@@ -701,7 +701,7 @@
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: space-between;
-  font-size: var(--exo-2-20-semibold1-size);
+  font-size: var(--exo-2-20-size);
 }
 .div72,
 .div74 {
@@ -709,7 +709,7 @@
   font-weight: 600;
 }
 .div72 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--orange-ffa6201);
   display: none;
 }
@@ -733,9 +733,9 @@
 }
 .div102 {
   position: relative;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--gray-33343a);
   text-align: center;
   display: inline-block;
@@ -776,7 +776,7 @@
   flex: 1;
   flex-direction: column;
   gap: var(--gap-sm);
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--black-000000);
 }
 .filtertickets {
@@ -907,11 +907,11 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xl);
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
 }
 .div104,
 .header {
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   text-align: left;
 }
 .header {
@@ -923,12 +923,12 @@
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   color: var(--white-ffffff);
 }
 .div104 {
   position: relative;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
   display: inline-block;
 }
@@ -940,9 +940,9 @@
 }
 .div105 {
   position: relative;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 500;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--black-000000);
   text-align: left;
   display: inline-block;
@@ -1006,7 +1006,7 @@
   display: inline-block;
 }
 .div108:active {
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
 }
 .div109 {
   color: var(--black-000000);
@@ -1051,15 +1051,15 @@
 .div111 {
   align-self: stretch;
   position: relative;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 500;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--gray-a5a7b2);
   text-align: left;
   display: inline-block;
 }
 .div110:active {
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
 }
 .div111 {
   color: var(--black-000000);
@@ -1102,7 +1102,7 @@
   text-overflow: ellipsis;
 }
 .div113 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
 }
 .field5 {
@@ -1121,9 +1121,9 @@
 }
 .div114 {
   position: relative;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--white-ffffff);
   text-align: center;
   display: inline-block;
@@ -1150,7 +1150,7 @@
 }
 .div116 {
   position: relative;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 500;
   color: var(--black-000000);
   display: inline-block;
@@ -1215,7 +1215,7 @@
   display: none;
   flex-direction: column;
   justify-content: center;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
 }
 .searchDropdown,
 .searchFieldbutton {
@@ -1249,7 +1249,7 @@
   justify-content: flex-start;
 }
 .headerCatalogTickets {
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   color: var(--gray-a5a7b2);
 }
 .div,
@@ -1272,9 +1272,9 @@
   overflow: hidden;
   flex-direction: row;
   text-align: left;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--gray-52545c);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 @media screen and (max-width: 768px) {
   .button {
@@ -1284,7 +1284,7 @@
     display: none;
   }
   .span {
-    font-size: var(--exo-2-20-semibold1-size);
+    font-size: var(--exo-2-20-size);
   }
   .line12 {
     display: none;

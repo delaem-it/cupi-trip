@@ -41,7 +41,7 @@
   justify-content: flex-start;
   gap: var(--gap-xs);
   text-align: left;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--gray-52545c);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }

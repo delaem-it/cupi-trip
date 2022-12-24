@@ -15,16 +15,16 @@
   flex-shrink: 0;
   flex-direction: column;
   gap: var(--gap-2xs);
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
 }
 .waytime {
   align-self: stretch;
   flex-direction: row;
   gap: var(--gap-lg);
   text-align: left;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--black-000000);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 @media screen and (max-width: 768px) {
   .way {

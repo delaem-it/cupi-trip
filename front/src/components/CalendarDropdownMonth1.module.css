@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-lg);
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   color: var(--black-000000);
 }
 .div3 {
@@ -121,8 +121,8 @@
 }
 .div36 {
   position: relative;
-  font-size: var(--exo-2-14-regular1-size);
-  font-family: var(--exo-2-24-regular1);
+  font-size: var(--exo-2-14-size);
+  font-family: var(--exo-2-24-regular);
   color: var(--black-000000);
   text-align: center;
   display: inline-block;
@@ -171,9 +171,9 @@
 }
 .div67 {
   position: relative;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   text-align: center;
   display: inline-block;
 }
@@ -215,9 +215,9 @@
   display: flex;
   gap: var(--gap-0);
   text-align: center;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--gray-d5d7e2);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 @media screen and (max-width: 1200px) {
   .scrollArrow1 {

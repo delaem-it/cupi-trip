@@ -26,7 +26,7 @@
   justify-content: flex-start;
   gap: var(--gap-2xs);
   text-align: left;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-81838e1);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }

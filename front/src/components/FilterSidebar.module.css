@@ -8,9 +8,9 @@
   flex-shrink: 0;
 }
 .div {
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--blue-007aff1);
   text-align: center;
   display: inline-block;
@@ -50,9 +50,9 @@
   flex-shrink: 0;
   gap: var(--gap-lg);
   text-align: left;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--black-000000);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 @media screen and (max-width: 768px) {
   .button {

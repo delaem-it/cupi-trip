@@ -9,7 +9,7 @@
   gap: var(--gap-2xs);
   width: auto;
   text-align: center;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--gray-d5d7e2);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }

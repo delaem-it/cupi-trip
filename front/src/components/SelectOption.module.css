@@ -2,17 +2,17 @@
 .div1 {
   align-self: stretch;
   position: relative;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   text-align: left;
   display: inline-block;
 }
 .div {
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   font-weight: 600;
   color: var(--black-000000);
 }
 .div1 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
 }
 .subtitleheading {
@@ -25,8 +25,8 @@
 }
 .rTW {
   position: relative;
-  font-size: var(--exo-2-14-regular1-size);
-  font-family: var(--exo-2-24-regular1);
+  font-size: var(--exo-2-14-size);
+  font-family: var(--exo-2-24-regular);
   color: var(--gray-a5a7b2);
   text-align: left;
   display: inline-block;

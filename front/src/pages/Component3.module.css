@@ -111,11 +111,11 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-xl);
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
 }
 .div2,
 .header {
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   text-align: left;
 }
 .header {
@@ -127,12 +127,12 @@
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   color: var(--white-ffffff);
 }
 .div2 {
   position: relative;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
   display: inline-block;
 }
@@ -144,9 +144,9 @@
 }
 .div3 {
   position: relative;
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 500;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--black-000000);
   text-align: left;
   display: inline-block;
@@ -201,7 +201,7 @@
   display: inline-block;
 }
 .div5 {
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
   font-weight: 500;
   color: var(--black-000000);
   white-space: nowrap;
@@ -259,7 +259,7 @@
   text-overflow: ellipsis;
 }
 .div13 {
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
 }
 .icons20px {
@@ -271,7 +271,7 @@
 }
 .div14,
 .field6 {
-  font-size: var(--exo-2-16-medium1-size);
+  font-size: var(--exo-2-16-size);
 }
 .field6 {
   flex: 1;
@@ -290,7 +290,7 @@
 .div14 {
   position: relative;
   font-weight: 600;
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
   color: var(--white-ffffff);
   text-align: center;
   display: inline-block;
@@ -627,9 +627,9 @@
   padding: var(--padding-5xl) var(--padding-5xl) var(--padding-lg);
   box-sizing: border-box;
   text-align: left;
-  font-size: var(--exo-2-14-regular1-size);
+  font-size: var(--exo-2-14-size);
   color: var(--gray-52545c);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 .div,
 .footer,
@@ -650,9 +650,9 @@
   overflow: hidden;
   flex-direction: row;
   text-align: left;
-  font-size: var(--exo-2-12-semibold1-size);
+  font-size: var(--exo-2-12-size);
   color: var(--gray-a5a7b2);
-  font-family: var(--exo-2-24-regular1);
+  font-family: var(--exo-2-24-regular);
 }
 @media screen and (max-width: 768px) {
   .gradientHome {
