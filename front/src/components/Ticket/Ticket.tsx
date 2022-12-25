@@ -1,19 +1,20 @@
-import { FunctionComponent } from 'react';
-import AviacompanyLogo from '../AviacompanyLogo';
-import FlightRoute from '../FlightRoute';
-import FlightPrice from '../FlightPrice';
+import { FC } from 'react';
+import AviacompanyLogo from './components/AviacompanyLogo';
+import FlightRoute from './components/FlightRoute';
+import FlightPrice from './components/FlightPrice';
 import Button from '../Button';
 import styles from './Ticket.module.css';
+import { formatPrice } from '../../utils/formatting';
 
 type TicketType = {
   companyName?: string;
   dateFrom?: string;
   timeFrom?: string;
   airportFrom?: string;
-  price?: string;
+  price?: string | number;
 };
 
-const Ticket: FunctionComponent<TicketType> = ({ companyName, dateFrom, timeFrom, airportFrom, price }) => {
+const Ticket: FC<TicketType> = ({ companyName, dateFrom, timeFrom, airportFrom, price }) => {
   return (
     <div className={styles.ticket}>
       <div className={styles.waytimeavia}>
@@ -22,7 +23,7 @@ const Ticket: FunctionComponent<TicketType> = ({ companyName, dateFrom, timeFrom
       </div>
       <div className={styles.rectangleDiv} />
       <div className={styles.pricebutton}>
-        <FlightPrice price={price} />
+        <FlightPrice price={formatPrice(price)} />
         <Button>Забронировать</Button>
       </div>
     </div>

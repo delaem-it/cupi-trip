@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import HeaderCatalogTickets from '../components/HeaderCatalogTickets';
 import FilterSidebar from '../components/FilterSidebar';
 import Ticket from '../components/Ticket/Ticket';
-import AviacompanyLogo from '../components/AviacompanyLogo';
+import AviacompanyLogo from '../components/Ticket/components/AviacompanyLogo';
 import Waytime from '../components/Waytime';
 import ButtonWithIconAfter from '../components/ButtonWithIconAfter';
 import FlightTimePortDetails from '../components/FlightTimePortDetails';

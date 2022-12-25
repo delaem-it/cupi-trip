@@ -1,11 +1,88 @@
-import { FunctionComponent, useCallback } from 'react';
+import { FC, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Tooltip from '../components/Tooltip';
 import Ticket from '../components/Ticket/Ticket';
-import TicketVariant from '../components/TicketVariant';
+import TicketVariant from '../components/Ticket/TicketVariant';
 import styles from './Component10.module.css';
+import { ITicket } from '../types/ticket';
 
-const Component10: FunctionComponent = () => {
+const defaultTicket: ITicket = {
+  price: { value: 9123, currency: 'RUB', symbol: '₽' },
+  to: {
+    company: { name: 'Nordwind', logo: '../icons/logo2.svg' },
+    routes: [
+      {
+        from: {
+          airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
+          date: 1696223700000,
+        },
+        to: {
+          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+          date: 1696228500000,
+        },
+        tag: '2 пересадки',
+      },
+      {
+        from: {
+          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+          date: 1696240500000,
+        },
+        to: {
+          airport: { name: 'Казань', code: 'KZN' },
+          date: 1696382100000,
+        },
+        tag: 'Прямой',
+      },
+      {
+        from: {
+          airport: { name: 'Казань', code: 'KZN' },
+          date: 1696438100000,
+        },
+        to: {
+          airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
+          date: 1696558400000,
+        },
+      },
+    ],
+  },
+  from: {
+    company: { name: 'Победа', logo: '../icons/logo.svg' },
+    routes: [
+      {
+        from: {
+          airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
+          date: 1696223700000,
+        },
+        to: {
+          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+          date: 1696228500000,
+        },
+      },
+      {
+        from: {
+          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+          date: 1696240500000,
+        },
+        to: {
+          airport: { name: 'Казань', code: 'KZN' },
+          date: 1696382100000,
+        },
+      },
+      {
+        from: {
+          airport: { name: 'Казань', code: 'KZN' },
+          date: 1696438100000,
+        },
+        to: {
+          airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
+          date: 1696558400000,
+        },
+      },
+    ],
+  },
+};
+
+const Component10: FC = () => {
   const navigate = useNavigate();
 
   const onButtonIconContainerClick = useCallback(() => {
@@ -602,7 +679,7 @@ const Component10: FunctionComponent = () => {
               </div>
             </div>
             <Ticket companyName="Победа" price="9 985 ₽" />
-            <TicketVariant />
+            <TicketVariant ticket={defaultTicket} />
           </div>
         </div>
       </div>
