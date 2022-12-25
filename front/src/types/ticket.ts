@@ -20,10 +20,16 @@ export interface RoutePoint {
   date: number;
 }
 
+export interface Transaction {
+  airport: Airport;
+  duration: number;
+}
+
 export interface Route {
   from: RoutePoint;
   to: RoutePoint;
   tag?: string;
+  transactions?: Transaction[];
 }
 
 export interface ITicket {

@@ -40,7 +40,7 @@ const FlightRoute: FC<FlightRouteType> = ({
           time={timeFrom}
           airport={route?.from.airport || airportFrom}
         />
-        <FlightArrow />
+        <FlightArrow transitions={route?.transactions} />
         <FlightTimePortDetails
           timestamp={route?.to.date}
           date={dateTo}
