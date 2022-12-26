@@ -20,7 +20,7 @@ const defaultTicket: ITicket = {
           airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
           date: 1696228500000,
         },
-        tag: '2 пересадки',
+        tag: { text: '2 пересадки', color: 'warn' },
       },
       {
         from: {
@@ -31,7 +31,7 @@ const defaultTicket: ITicket = {
           airport: { name: 'Казань', code: 'KZN' },
           date: 1696382100000,
         },
-        tag: 'Прямой',
+        tag: { text: 'Прямой', color: 'success' },
       },
       {
         from: {

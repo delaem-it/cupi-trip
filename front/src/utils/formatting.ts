@@ -15,3 +15,17 @@ export const formatPrice = (price?: Price | string | number) => {
   const match = priceValue.toString().match(/(\d+?)(?=(\d{3})+(?!\d)|$)/gm);
   return match?.join(' ') + ` ${priceSymbol}`;
 };
+
+export function getRightEndingTransactions(total: number) {
+  if (!total) {
+    return `${total} пересадок`;
+  } else if (total % 100 > 4 && total % 100 < 21) {
+    return `${total} пересадок`;
+  } else if (total % 10 === 1) {
+    return `${total} пересадка`;
+  } else if (total % 10 < 5 && total % 10 > 0) {
+    return `${total} пересадки`;
+  } else {
+    return `${total} пересадок`;
+  }
+}

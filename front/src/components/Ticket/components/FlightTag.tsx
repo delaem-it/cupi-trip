@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import { Property } from 'csstype';
 import styles from './FlightTag.module.scss';
+import { Tag } from '../../../types/ticket';
 
 type FlightTagType = {
-  tag?: string;
+  tag?: Tag;
 
   /** Style props */
   componentColor?: Property.Color;
@@ -20,7 +21,7 @@ const FlightTag: FC<FlightTagType> = ({ tag, componentColor, componentDisplay })
         display: componentDisplay,
       }}
     >
-      {tag}
+      {tag.text}
     </div>
   );
 };

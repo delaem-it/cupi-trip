@@ -25,10 +25,15 @@ export interface Transaction {
   duration: number;
 }
 
+export interface Tag {
+  text: string;
+  color: 'success' | 'info' | 'warn' | 'error';
+}
+
 export interface Route {
   from: RoutePoint;
   to: RoutePoint;
-  tag?: string;
+  tag?: Tag;
   transactions?: Transaction[];
 }
 

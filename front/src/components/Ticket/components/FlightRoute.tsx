@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styles from './FlightRoute.module.scss';
-import { Route } from '../../../types/ticket';
+import { Route, Tag } from '../../../types/ticket';
 import FlightTimePortDetails from '../components/FlightTimePortDetails';
 import FlightArrow from '../components/FlightArrow';
 import FlightDuration from '../components/FlightDuration';
@@ -15,7 +15,7 @@ type FlightRouteType = {
   timeTo?: string;
   airportTo?: string;
   duration?: number;
-  tag?: string;
+  tag?: Tag;
   route?: Route;
 };
 

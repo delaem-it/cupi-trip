@@ -1,11 +1,11 @@
-import { FC } from 'react';
+import { FC, Fragment, useState } from 'react';
 import AviacompanyLogo from './components/AviacompanyLogo';
 import FlightRoute from './components/FlightRoute';
 import FlightTransfer from './components/FlightTransfer';
 import Button from '../../components/Button';
 import styles from './TicketVariant.module.scss';
-import { formatDuartion, formatPrice } from '../../utils/formatting';
-import { ITicket } from '../../types/ticket';
+import { formatDuartion, formatPrice, getRightEndingTransactions } from '../../utils/formatting';
+import { ITicket, Route, Tag, Transaction } from '../../types/ticket';
 
 type TicketType = {
   ticket: ITicket;
@@ -25,7 +25,6 @@ const defaultTicket: ITicket = {
           airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
           date: 1696228500000,
         },
-        tag: 'Прямой',
       },
       {
         from: {
@@ -36,7 +35,7 @@ const defaultTicket: ITicket = {
           airport: { name: 'Казань', code: 'KZN' },
           date: 1696382100000,
         },
-        tag: 'Прямой',
+        tag: { text: 'Прямой', color: 'success' },
       },
       {
         from: {
@@ -62,7 +61,7 @@ const defaultTicket: ITicket = {
           airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
           date: 1696228500000,
         },
-        tag: 'Прямой',
+        tag: { text: 'Прямой', color: 'success' },
       },
       {
         from: {
@@ -88,7 +87,72 @@ const defaultTicket: ITicket = {
   },
 };
 
+const getTransactions = (routes: Route[]) => {
+  return routes.reduce((prev: Transaction[], cur: Route, index: number): Transaction[] => {
+    if (index === 0) return prev;
+    const duration = (routes[index].from.date - routes[index - 1].to.date) / 60000;
+    return [
+      ...prev,
+      {
+        airport: cur.from.airport,
+        duration: duration,
+      },
+    ];
+  }, []);
+};
+
+const getSummaryTicket = (ticket: ITicket): ITicket => {
+  const toTransactions: Transaction[] = getTransactions(ticket.to.routes);
+  const toTagText = toTransactions.length ? `${getRightEndingTransactions(toTransactions.length)}` : undefined;
+  const toTag: Tag | undefined = toTransactions.length
+    ? {
+        text: toTagText || '',
+        color: toTransactions.length > 3 ? 'error' : toTransactions.length > 0 ? 'warn' : 'info',
+      }
+    : undefined;
+  const summaryToRoute: Route = {
+    from: { ...ticket.to.routes[0].from },
+    to: { ...ticket.to.routes[ticket.to.routes.length - 1].to },
+    transactions: toTransactions,
+    tag: toTag,
+  };
+
+  const fromTransactions: Transaction[] = ticket.from ? getTransactions(ticket.from.routes) : [];
+  const fromTagText = toTransactions.length ? `${getRightEndingTransactions(toTransactions.length)}` : undefined;
+  const fromTag: Tag | undefined = toTransactions.length
+    ? {
+        text: fromTagText || '',
+        color: toTransactions.length > 3 ? 'error' : toTransactions.length > 0 ? 'warn' : 'info',
+      }
+    : undefined;
+  const summaryFromRoute: Route | undefined = ticket.from && {
+    from: { ...ticket.from.routes[0].from },
+    to: { ...ticket.from.routes[ticket.from.routes.length - 1].to },
+    transactions: fromTransactions,
+    tag: fromTag,
+  };
+
+  const summaryTicket: ITicket = {
+    price: ticket.price,
+    to: {
+      routes: [summaryToRoute],
+      company: ticket.to.company,
+    },
+    from: ticket.from &&
+      summaryFromRoute && {
+        routes: [summaryFromRoute],
+        company: ticket.from?.company,
+      },
+  };
+
+  return summaryTicket;
+};
+
 const TicketVariant: FC<TicketType> = ({ ticket = defaultTicket }) => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const summaryTicket = getSummaryTicket(ticket);
+  console.log({ summaryTicket });
   return (
     <div className={styles.ticket}>
       <div className={styles.waytimeavia}>
@@ -96,40 +160,45 @@ const TicketVariant: FC<TicketType> = ({ ticket = defaultTicket }) => {
           <span className={styles.tag}>ТУДА</span>
         </div>
         <AviacompanyLogo company={ticket.to.company} />
-        {ticket.to.routes.map((route, index) => {
-          let transfer = null;
-          if (index > 0) {
-            const duration = ticket.to.routes[index].from.date - ticket.to.routes[index - 1].to.date;
-            transfer = <FlightTransfer duration={formatDuartion(Math.floor(duration / 60000))} />;
-          }
-          return (
-            <>
-              {transfer}
-              <FlightRoute route={route} />
-            </>
-          );
-        })}
+        {showDetails ? (
+          ticket.to.routes.map((route, index) => {
+            let transfer = null;
+            if (index > 0) {
+              const duration = (ticket.to.routes[index].from.date - ticket.to.routes[index - 1].to.date) / 60000;
+              transfer = <FlightTransfer duration={formatDuartion(Math.floor(duration))} />;
+            }
+            return (
+              <Fragment key={index}>
+                {transfer}
+                <FlightRoute route={route} />
+              </Fragment>
+            );
+          })
+        ) : (
+          <FlightRoute route={summaryTicket.to.routes[0]} />
+        )}
 
         <div className={styles.directionTag}>
           <span className={styles.tag}>ОБРАТНО</span>
           <hr className={styles.hr} />
         </div>
         {ticket.from ? <AviacompanyLogo company={ticket.from?.company} /> : null}
-        {ticket.from
+        {ticket.from && showDetails
           ? ticket.from.routes.map((route, index) => {
               let transfer = null;
               if (index > 0 && ticket.from) {
-                const duration = ticket.from.routes[index].from.date - ticket.from.routes[index - 1].from.date;
-                transfer = <FlightTransfer duration={formatDuartion(duration / 60000)} />;
+                const duration = (ticket.to.routes[index].from.date - ticket.to.routes[index - 1].to.date) / 60000;
+                transfer = <FlightTransfer duration={formatDuartion(Math.floor(duration))} />;
               }
               return (
-                <>
+                <Fragment key={index}>
                   {transfer}
                   <FlightRoute route={route} />
-                </>
+                </Fragment>
               );
             })
           : null}
+        {!showDetails ? <FlightRoute route={summaryTicket.from?.routes[0]} /> : null}
       </div>
       <div className={styles.separator} />
       <div className={styles.priceDetails}>
@@ -137,7 +206,12 @@ const TicketVariant: FC<TicketType> = ({ ticket = defaultTicket }) => {
           <div className={styles.price}>{formatPrice(ticket.price)}</div>
           <Button>Забронировать</Button>
         </div>
-        <Button className={styles.expand} iconAfter="../icons/icons-16px20.svg" variant="text">
+        <Button
+          className={styles.expand}
+          iconAfter="../icons/icons-16px20.svg"
+          variant="text"
+          onClick={() => setShowDetails(s => !s)}
+        >
           Cкрыть детали
         </Button>
       </div>

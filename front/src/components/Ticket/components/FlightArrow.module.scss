@@ -43,6 +43,7 @@
     border-radius: var(--br-sm);
     background-color: var(--black-222222);
     padding: var(--padding-5xs) var(--padding-4xs);
+    white-space: pre-line;
   }
 }
 @media screen and (max-width: 768px) {

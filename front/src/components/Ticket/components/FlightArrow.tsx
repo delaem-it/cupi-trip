@@ -3,6 +3,7 @@ import Tooltip, { tooltipClasses, TooltipProps } from '@mui/material/Tooltip';
 import styles from './FlightArrow.module.scss';
 import styled from '@emotion/styled';
 import { Transaction } from '../../../types/ticket';
+import { formatDuartion } from '../../../utils/formatting';
 
 interface FlightArrowProps {
   transitions?: Transaction[];
@@ -34,9 +35,15 @@ const FlightArrow: FC<FlightArrowProps> = ({ transitions }) => {
             const position = (100 * (i + 1)) / (transitions.length + 1);
             const text = `Пересадка\n${transaction.airport.city || transaction.airport.name} (${
               transaction.airport.code
-            })\n${transaction.duration}`;
+            })\n${formatDuartion(Math.floor(transaction.duration))}`;
             return (
-              <BootstrapTooltip key={transaction.airport.code + i} title={text} placement="top" arrow>
+              <BootstrapTooltip
+                className={styles.tooltip}
+                key={transaction.airport.code + i}
+                title={text}
+                placement="top"
+                arrow
+              >
                 <svg
                   className={styles.circle}
                   style={{ left: `${position}%` }}
