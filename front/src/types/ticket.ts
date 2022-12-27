@@ -20,7 +20,7 @@ export interface RoutePoint {
   date: number;
 }
 
-export interface Transaction {
+export interface Transfer {
   airport: Airport;
   duration: number;
 }
@@ -34,10 +34,11 @@ export interface Route {
   from: RoutePoint;
   to: RoutePoint;
   tag?: Tag;
-  transactions?: Transaction[];
+  transfers?: Transfer[];
 }
 
 export interface ITicket {
+  id: number | string;
   price: Price;
   to: {
     company: Company;
