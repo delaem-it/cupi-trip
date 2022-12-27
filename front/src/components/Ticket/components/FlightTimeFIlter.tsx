@@ -2,7 +2,7 @@ import { FC } from 'react';
 import SliderInputWIthLabel from '../../../components/SliderInputWIthLabel';
 import styles from './FlightTimeFIlter.module.scss';
 
-type FlightTimeFIlterType = {
+type FlightTimeFilterType = {
   direction?: string;
   departureLabel?: string;
   departureFrom?: string;
@@ -12,7 +12,7 @@ type FlightTimeFIlterType = {
   arrivalTo?: string;
 };
 
-const FlightTimeFIlter: FC<FlightTimeFIlterType> = ({
+const FlightTimeFilter: FC<FlightTimeFilterType> = ({
   direction,
   departureLabel,
   departureFrom,
@@ -38,4 +38,4 @@ const FlightTimeFIlter: FC<FlightTimeFIlterType> = ({
   );
 };
 
-export default FlightTimeFIlter;
+export default FlightTimeFilter;

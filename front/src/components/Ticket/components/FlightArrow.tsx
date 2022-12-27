@@ -2,11 +2,11 @@ import { FC } from 'react';
 import Tooltip, { tooltipClasses, TooltipProps } from '@mui/material/Tooltip';
 import styles from './FlightArrow.module.scss';
 import styled from '@emotion/styled';
-import { Transaction } from '../../../types/ticket';
-import { formatDuartion } from '../../../utils/formatting';
+import { Transfer } from '../../../types/ticket';
+import { formatDuration } from '../../../utils/formatting';
 
 interface FlightArrowProps {
-  transitions?: Transaction[];
+  transitions?: Transfer[];
 }
 
 const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
@@ -35,7 +35,7 @@ const FlightArrow: FC<FlightArrowProps> = ({ transitions }) => {
             const position = (100 * (i + 1)) / (transitions.length + 1);
             const text = `Пересадка\n${transaction.airport.city || transaction.airport.name} (${
               transaction.airport.code
-            })\n${formatDuartion(Math.floor(transaction.duration))}`;
+            })\n${formatDuration(Math.floor(transaction.duration))}`;
             return (
               <BootstrapTooltip
                 className={styles.tooltip}

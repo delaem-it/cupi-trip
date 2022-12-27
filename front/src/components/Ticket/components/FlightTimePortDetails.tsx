@@ -5,16 +5,14 @@ import styles from './FlightTimePortDetails.module.scss';
 import { Airport } from '../../../types/ticket';
 
 type FlightTimePortDetailsType = {
-  date?: string;
-  time?: string;
-  timestamp?: number;
-  airport?: Airport | string;
+  timestamp: number;
+  airport: Airport | string;
 };
 
-const FlightTimePortDetails: FC<FlightTimePortDetailsType> = ({ date, time, timestamp, airport }) => {
+const FlightTimePortDetails: FC<FlightTimePortDetailsType> = ({ timestamp, airport }) => {
   return (
     <div className={styles.timesubtitle}>
-      <FlightTimeDetails timestamp={timestamp} time={time} date={date} />
+      <FlightTimeDetails timestamp={timestamp} />
       <FlightPortDetails airport={airport} />
     </div>
   );

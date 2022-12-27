@@ -1,17 +1,15 @@
-import { FC, useMemo } from 'react';
-import CSS, { Property } from 'csstype';
+import { FC } from 'react';
+import { format } from 'date-fns';
+import { ru } from 'date-fns/locale';
 import styles from './FlightTimeDetails.module.scss';
 
 type FlightTimeDetailsType = {
-  time?: string;
-  date?: string;
-  timestamp?: number;
+  timestamp: number;
 };
 
-const FlightTimeDetails: FC<FlightTimeDetailsType> = ({ time, date, timestamp }) => {
-  const timeString = timestamp ? new Date(timestamp).toLocaleTimeString('ru').substring(0, 5) : time;
-  const dateArray = timestamp ? new Date(timestamp).toDateString().split(' ') : null;
-  const dateString = dateArray ? `${dateArray[2]} ${dateArray[1]}, ${dateArray[0]}` : date;
+const FlightTimeDetails: FC<FlightTimeDetailsType> = ({ timestamp }) => {
+  const timeString = format(timestamp, 'hh:mm');
+  const dateString = format(timestamp, 'dd MMMM, eeeeee', { locale: ru });
 
   return (
     <div className={styles.frameDiv}>
