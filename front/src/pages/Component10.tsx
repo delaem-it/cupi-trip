@@ -2,14 +2,14 @@ import { FC, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Tooltip from '../components/Tooltip';
 import Ticket from '../components/Ticket/Ticket';
-import TicketVariant from '../components/Ticket/TicketVariant';
 import styles from './Component10.module.css';
 import { ITicket } from '../types/ticket';
 
 const defaultTicket: ITicket = {
+  id: 1,
   price: { value: 9123, currency: 'RUB', symbol: '₽' },
   to: {
-    company: { name: 'Nordwind', logo: '../icons/logo2.svg' },
+    company: { name: 'Nordwind', logo: '../icons/aeroNordwind.svg' },
     routes: [
       {
         from: {
@@ -46,7 +46,7 @@ const defaultTicket: ITicket = {
     ],
   },
   from: {
-    company: { name: 'Победа', logo: '../icons/logo.svg' },
+    company: { name: 'Победа', logo: '../icons/aeroPobeda.svg' },
     routes: [
       {
         from: {
@@ -430,7 +430,7 @@ const Component10: FC = () => {
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img className={styles.logoIcon} alt="" src="../icons/logo.svg" />
+                        <img className={styles.logoIcon} alt="" src="../icons/aeroPobeda.svg" />
                         <div className={styles.div4}>Победа</div>
                       </div>
                       <div className={styles.checkbox4}>
@@ -444,7 +444,7 @@ const Component10: FC = () => {
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
+                        <img className={styles.logoIcon} alt="" src="../icons/aeroNordwind.svg" />
                         <div className={styles.div4}>Nordwind</div>
                       </div>
                       <div className={styles.checkbox4}>
@@ -458,7 +458,7 @@ const Component10: FC = () => {
                         <div className={styles.icons20px}>
                           <div className={styles.rectangleDiv8} />
                         </div>
-                        <img className={styles.logoIcon} alt="" src="../icons/logo4.svg" />
+                        <img className={styles.logoIcon} alt="" src="../icons/aeroSAS.svg" />
                         <div className={styles.div4}>SAS</div>
                       </div>
                       <div className={styles.checkbox4}>
@@ -630,7 +630,7 @@ const Component10: FC = () => {
             <div className={styles.ticket}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon7} alt="" src="../icons/logo2.svg" />
+                  <img className={styles.logoIcon7} alt="" src="../icons/aeroNordwind.svg" />
                   <div className={styles.div77}>Nordwind</div>
                 </div>
                 <div className={styles.waytime}>
@@ -678,8 +678,7 @@ const Component10: FC = () => {
                 </div>
               </div>
             </div>
-            <Ticket companyName="Победа" price="9 985 ₽" />
-            <TicketVariant ticket={defaultTicket} />
+            <Ticket ticket={defaultTicket} />
           </div>
         </div>
       </div>

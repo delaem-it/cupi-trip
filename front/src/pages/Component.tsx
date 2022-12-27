@@ -1,10 +1,8 @@
 import { FunctionComponent } from 'react';
 import HeaderCatalogTickets from '../components/HeaderCatalogTickets';
-import FilterSidebar from '../components/FilterSidebar';
+import { ITicket } from '../types/ticket';
 import Ticket from '../components/Ticket/Ticket';
-import AviacompanyLogo from '../components/Ticket/components/AviacompanyLogo';
-import Waytime from '../components/Waytime';
-import ButtonWithIconAfter from '../components/ButtonWithIconAfter';
+import FilterSidebar from '../components/FilterSidebar';
 import FlightTimePortDetails from '../components/FlightTimePortDetails';
 import FlightArrow from '../components/FlightArrow';
 import FlightDuration from '../components/FlightDuration';
@@ -13,6 +11,118 @@ import FlightPortDetails from '../components/FlightPortDetails';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import styles from './Component.module.css';
+
+const defaultTickets: ITicket[] = [
+  {
+    id: 1,
+    price: { value: 9123, currency: 'RUB', symbol: '₽' },
+    to: {
+      company: { name: 'Победа', logo: '../icons/aeroPobeda.svg' },
+      routes: [
+        {
+          from: {
+            airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
+            date: 1696223700000,
+          },
+          to: {
+            airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
+            date: 1696558400000,
+          },
+        },
+      ],
+    },
+  },
+  {
+    id: 2,
+    price: { value: 9123, currency: 'RUB', symbol: '₽' },
+    to: {
+      company: { name: 'Nordwind', logo: '../icons/aeroNordwind.svg' },
+      routes: [
+        {
+          from: {
+            airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
+            date: 1669223400000,
+          },
+          to: {
+            airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+            date: 1669234400000,
+          },
+        },
+        {
+          from: {
+            airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+            date: 1669255500000,
+          },
+          to: {
+            airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
+            date: 1669296800000,
+          },
+          tag: { text: 'Прямой', color: 'success' },
+        },
+      ],
+    },
+  },
+  {
+    id: 3,
+    price: { value: 9123, currency: 'RUB', symbol: '₽' },
+    to: {
+      company: { name: 'Победа', logo: '../icons/aeroPobeda.svg' },
+      routes: [
+        {
+          from: {
+            airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
+            date: 1696223700000,
+          },
+          to: {
+            airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+            date: 1696228500000,
+          },
+          tag: { text: 'Прямой', color: 'success' },
+        },
+      ],
+    },
+  },
+  {
+    id: 4,
+    price: { value: 123, currency: 'RUB', symbol: '₽' },
+    to: {
+      company: { name: 'Победа', logo: '../icons/aeroPobeda.svg' },
+      routes: [
+        {
+          from: {
+            airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
+            date: 1696240500000,
+          },
+          to: {
+            airport: { name: 'Казань', code: 'KZN' },
+            date: 1696382100000,
+          },
+          tag: { text: 'Прямой', color: 'success' },
+        },
+      ],
+    },
+  },
+  {
+    id: 5,
+    price: { value: 1123442, currency: 'RUB', symbol: '₽' },
+    to: {
+      company: { name: 'Победа', logo: '../icons/aeroPobeda.svg' },
+      routes: [
+        {
+          from: {
+            airport: { name: 'Казань', code: 'KZN' },
+            date: 1696438100000,
+          },
+          to: {
+            airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
+            date: 1696558400000,
+          },
+          tag: { text: 'Прямой', color: 'success' },
+        },
+      ],
+    },
+  },
+];
 
 const Component: FunctionComponent = () => {
   return (
@@ -26,42 +136,13 @@ const Component: FunctionComponent = () => {
               <img className={styles.icons16px} alt="" src="../icons/icons-16px10.svg" />
               <div className={styles.div1}>Фильтр</div>
             </button>
-            <Ticket
-              companyName="Победа"
-              dateFrom="23 ноября, Ср"
-              timeFrom="12:10"
-              airportFrom="Москва, Внуково (VKO) "
-              price="9 985 ₽"
-            />
-            <div className={styles.ticket}>
-              <div className={styles.waytimeavia}>
-                <AviacompanyLogo logo="../icons/logo2.svg" companyName="Nordwind" />
-                <Waytime
-                  dateFrom="11:12"
-                  timeFrom="23 ноября, Ср"
-                  airportFrom="Москва, Внуково (VKO) "
-                  dateTo="05:22"
-                  timeTo="24 ноября, Ср"
-                  airportTo="Санкт-Петербург, Пулково (LED)"
-                  duration="13 ч 10 мин"
-                  tag="1 пересадка"
-                />
-              </div>
-              <div className={styles.rectangleDiv} />
-              <div className={styles.pricedetailsButton}>
-                <div className={styles.pricebutton}>
-                  <div className={styles.div2}>12 985 ₽</div>
-                  <button className={styles.button1}>
-                    <div className={styles.div3}>Забронировать</div>
-                  </button>
-                </div>
-                <ButtonWithIconAfter reviewText="Детали перелета" icons16px="../icons/icons-16px18.svg" />
-              </div>
-            </div>
+            {defaultTickets.map((ticket, index) => (
+              <Ticket key={index} ticket={ticket} />
+            ))}
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroNordwind.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime}>
@@ -114,7 +195,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo10.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroTurkishAirlines.svg" />
                   <div className={styles.div4}>Turkish airlines</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -155,7 +236,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo4.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroSAS.svg" />
                   <div className={styles.div4}>SAS</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -196,7 +277,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroQatarAirways.svg" />
                   <div className={styles.div4}>Qatar Airways</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -237,7 +318,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo13.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroLufthansa.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -278,7 +359,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroNordwind.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -375,7 +456,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo16.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroSAS.svg" />
                   <div className={styles.div4}>SAS</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -416,7 +497,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroQatarAirways.svg" />
                   <div className={styles.div4}>Qatar Airways</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -457,7 +538,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo18.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroLufthansa.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -498,7 +579,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroNordwind.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -554,7 +635,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo20.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroLufthansa.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -595,7 +676,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroNordwind.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -692,7 +773,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo16.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroSAS.svg" />
                   <div className={styles.div4}>SAS</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -733,7 +814,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo5.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroQatarAirways.svg" />
                   <div className={styles.div4}>Qatar Airways</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -774,7 +855,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo25.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroLufthansa.svg" />
                   <div className={styles.div4}>Lufthansa</div>
                 </div>
                 <div className={styles.waytime1}>
@@ -815,7 +896,7 @@ const Component: FunctionComponent = () => {
             <div className={styles.ticket1}>
               <div className={styles.waytimeavia}>
                 <div className={styles.avia}>
-                  <img className={styles.logoIcon} alt="" src="../icons/logo2.svg" />
+                  <img className={styles.logoIcon} alt="" src="../icons/aeroNordwind.svg" />
                   <div className={styles.div4}>Nordwind</div>
                 </div>
                 <div className={styles.waytime1}>

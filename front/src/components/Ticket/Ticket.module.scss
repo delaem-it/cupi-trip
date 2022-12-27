@@ -93,6 +93,11 @@
     justify-content: flex-start;
     color: var(--blue-0068d9);
   }
+  .invert {
+    img {
+      transform: rotateX(180deg);
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .ticket {
