@@ -1,17 +1,13 @@
-import { FunctionComponent } from "react";
-import SliderInput from "../components/SliderInput";
-import styles from "./FilterPrice.module.css";
+import { FunctionComponent } from 'react';
+import SliderInput from '../SliderInput';
+import styles from './FilterTransferDuration.module.css';
 
-const FilterPrice: FunctionComponent = () => {
+const FilterTransferDuration: FunctionComponent = () => {
   return (
     <div className={styles.filter}>
       <div className={styles.nameFilter}>
-        <div className={styles.div}>Цена</div>
-        <img
-          className={styles.icons16px}
-          alt=""
-          src="../icons/icons-16px11.svg"
-        />
+        <div className={styles.div}>Длительность пересадки</div>
+        <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
       </div>
       <div className={styles.filterLists}>
         <div className={styles.list}>
@@ -44,9 +40,16 @@ const FilterPrice: FunctionComponent = () => {
           <div className={styles.rectangleDiv4} />
         </div>
       </div>
-      <SliderInput from="2 985 ₽" to="19 985 ₽" />
+      <SliderInput
+        from="1 ч 15 мин"
+        to="12 ч 40 мин"
+        linePadding="0px var(--padding-6xl) 0px 0px"
+        lineBoxSizing="border-box"
+        pointJustifyContent="flex-start"
+        pointGap="var(--gap-4xl)"
+      />
     </div>
   );
 };
 
-export default FilterPrice;
+export default FilterTransferDuration;

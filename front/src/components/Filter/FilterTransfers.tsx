@@ -1,17 +1,13 @@
-import { FunctionComponent } from "react";
-import Checkbox from "../components/Checkbox";
-import styles from "./FilterTransfers.module.css";
+import { FunctionComponent } from 'react';
+import Checkbox from '../Checkbox';
+import styles from './FilterTransfers.module.css';
 
 const FilterTransfers: FunctionComponent = () => {
   return (
     <div className={styles.filter}>
       <div className={styles.nameFilter}>
         <div className={styles.div}>Пересадки</div>
-        <img
-          className={styles.icons16px}
-          alt=""
-          src="../icons/icons-16px11.svg"
-        />
+        <img className={styles.icons16px} alt="" src="../icons/icons-16px11.svg" />
       </div>
       <div className={styles.filterLists}>
         <div className={styles.list}>

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import SliderInputWIthLabel from '../../../components/SliderInputWIthLabel';
-import styles from './FlightTimeFIlter.module.scss';
+import styles from './FlightTimeFilter.module.scss';
 
 type FlightTimeFilterType = {
   direction?: string;

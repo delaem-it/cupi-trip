@@ -1,0 +1,44 @@
+.filter {
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff);
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--gray-52545c);
+  font-family: var(--exo-2-24-regular);
+  transition: 0.3s;
+}
+.name {
+  flex: 1;
+  font-weight: 600;
+}
+.button {
+  padding: 0 !important;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.invert {
+  transform: rotateX(180deg);
+}
+.content {
+  margin-top: var(--gap-sm);
+  align-self: stretch;
+}
+.close {
+  display: none;
+  height: 0;
+}
+.nameFilter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  color: var(--black-000000);
+}

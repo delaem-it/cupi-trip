@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
-import CheckboxWIthLogo from '../components/CheckboxWIthLogo';
-import Checkbox from '../components/Checkbox';
+import Checkbox from '../Checkbox';
+import CheckboxWIthLogo from '../CheckboxWIthLogo';
 import styles from './FilterCompanies.module.css';
 
 const FilterCompanies: FunctionComponent = () => {

@@ -1,8 +1,8 @@
-import { FunctionComponent } from "react";
-import SliderInputWIthLabel from "../components/SliderInputWIthLabel";
-import styles from "./FlightTimeFIlter.module.css";
+import { FunctionComponent } from 'react';
+import SliderInputWIthLabel from '../SliderInputWIthLabel';
+import styles from './FlightTimeFilter.module.css';
 
-type FlightTimeFIlterType = {
+type FlightTimeFilterType = {
   direction?: string;
   departureLabel?: string;
   departureFrom?: string;
@@ -12,7 +12,7 @@ type FlightTimeFIlterType = {
   arrivalTo?: string;
 };
 
-const FlightTimeFIlter: FunctionComponent<FlightTimeFIlterType> = ({
+const FlightTimeFilter: FunctionComponent<FlightTimeFilterType> = ({
   direction,
   departureLabel,
   departureFrom,
@@ -24,11 +24,7 @@ const FlightTimeFIlter: FunctionComponent<FlightTimeFIlterType> = ({
   return (
     <div className={styles.group}>
       <div className={styles.div}>{direction}</div>
-      <SliderInputWIthLabel
-        label={departureLabel}
-        from={departureFrom}
-        to={departureTo}
-      />
+      <SliderInputWIthLabel label={departureLabel} from={departureFrom} to={departureTo} />
       <SliderInputWIthLabel
         label={arrivalLabel}
         from={arrivalFrom}
@@ -42,4 +38,4 @@ const FlightTimeFIlter: FunctionComponent<FlightTimeFIlterType> = ({
   );
 };
 
-export default FlightTimeFIlter;
+export default FlightTimeFilter;

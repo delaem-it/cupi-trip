@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import HeaderCatalogTickets from '../components/HeaderCatalogTickets';
 import { ITicket } from '../types/ticket';
 import Ticket from '../components/Ticket/Ticket';
-import FilterSidebar from '../components/FilterSidebar';
+import FilterSidebar from '../components/Filter/FilterSidebar';
 import FlightTimePortDetails from '../components/FlightTimePortDetails';
 import FlightArrow from '../components/FlightArrow';
 import FlightDuration from '../components/FlightDuration';

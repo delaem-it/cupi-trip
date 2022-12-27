@@ -225,7 +225,7 @@ const Ticket: FC<TicketType> = ({ ticket = defaultTicket }) => {
         {hasDetails && (
           <Button
             className={clsx(styles.expand, showDetails ? '' : styles.invert)}
-            iconAfter="../icons/iconChevronDown.svg"
+            iconAfter="../icons/iconChevron.svg"
             variant="text"
             onClick={() => setShowDetails(s => !s)}
           >

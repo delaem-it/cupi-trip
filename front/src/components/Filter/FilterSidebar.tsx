@@ -1,13 +1,13 @@
-import { FunctionComponent, useMemo } from 'react';
+import { ChangeEvent, FunctionComponent, useMemo, useState } from 'react';
 import CSS, { Property } from 'csstype';
-import FilterPrice from '../components/FilterPrice';
-import FilterTransfers from '../components/FilterTransfers';
-import FilterTransferDuration from '../components/FilterTransferDuration';
-import FilterCompanies from '../components/FilterCompanies';
-import FilterDepartureArrival from '../components/FilterDepartureArrival';
-import ButtonWithIconBefore from '../components/ButtonWithIconBefore';
+import ButtonWithIconBefore from '../ButtonWithIconBefore';
 import styles from './FilterSidebar.module.css';
-import Button from './Button';
+import Button from '../Button';
+import FilterPrice from './FilterPrice/FilterPrice';
+import FilterTransfers from './FilterTransfers';
+import FilterTransferDuration from './FilterTransferDuration';
+import FilterCompanies from './FilterCompanies';
+import FilterDepartureArrival from './FilterDepartureArrival';
 
 type FilterSidebarType = {
   /** Style props */
@@ -21,6 +21,10 @@ const FilterSidebar: FunctionComponent<FilterSidebarType> = ({ filterCursor }) =
     };
   }, [filterCursor]);
 
+  const [price, setPrice] = useState([400, 9000]);
+  const handlePriceChange = (e: Event, newValue: number | number[]) =>
+    typeof newValue !== 'number' && setPrice(newValue);
+
   return (
     <div className={styles.filter} style={filterStyle}>
       <button className={styles.button}>
@@ -29,7 +33,7 @@ const FilterSidebar: FunctionComponent<FilterSidebarType> = ({ filterCursor }) =
       </button>
       <div className={styles.filter1}>
         <div className={styles.filter2}>
-          <FilterPrice />
+          <FilterPrice value={price} min={0} max={10000} onChange={handlePriceChange} />
           <FilterTransfers />
           <FilterTransferDuration />
           <FilterCompanies />
