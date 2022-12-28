@@ -16,11 +16,12 @@ class TravelPayoutsController extends Controller
         $flightService = $travel->getFlightService();
         $flightService
             ->setIp('127.0.0.1')
-            ->setHost('aviasales.ru')
+            ->setHost('beta.aviasales.ru')
             ->setMarker('211648')
             ->addPassenger('adults', 2)
-            ->addSegment('LED', 'MOW', '2016-02-01');
+            ->addSegment('LED', 'MOW', '2022-12-31');
         $searchData    = $flightService->search('ru', 'Y');
+        return $searchData;
         $searchResults = $flightService->getSearchResults($searchData['search_id']);
         return $searchResults;
     }
