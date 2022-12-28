@@ -9,14 +9,14 @@ type CheckboxType = {
 
 const Checked = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_1160_109462)">
+    <g clipPath="url(#clip0_1160_109462)">
       <rect width="20" height="20" rx="4" fill="#007AFF" />
       <path
         d="M4.16602 10.0001L8.33268 14.1667L15.8327 6.66675"
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <defs>
@@ -28,7 +28,7 @@ const Checked = () => (
 );
 const Unchecked = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#clip0_1120_81111)">
+    <g clipPath="url(#clip0_1120_81111)">
       <rect x="0.5" y="0.5" width="19" height="19" rx="3.5" fill="white" stroke="#A5A7B3" />
     </g>
     <defs>

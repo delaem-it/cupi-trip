@@ -53,7 +53,7 @@ const FlightArrow: FC<FlightArrowProps> = ({ transitions }) => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <circle cx="4" cy="4" r="3" stroke="#D5D7E2" fill="#FFFFFF" stroke-width="2" />
+                  <circle cx="4" cy="4" r="3" stroke="#D5D7E2" fill="#FFFFFF" strokeWidth="2" />
                 </svg>
               </BootstrapTooltip>
             );
