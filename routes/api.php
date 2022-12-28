@@ -1,8 +1,16 @@
 <?php
 
+use Illuminate\Http\Request;
+
+
 Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1'], function () {
     // Search
     Route::get('search', 'TravelPayoutsController@index');
+
+    // Auth
+    Route::post('register', 'Auth\AuthController@register');
+    Route::post('login', 'Auth\AuthController@login');
+    Route::post('email-verify', 'Auth\AuthController@verifyEmailCode');
 });
 
 Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => ['auth:sanctum']], function () {
