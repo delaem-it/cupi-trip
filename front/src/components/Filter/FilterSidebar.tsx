@@ -1,9 +1,9 @@
-import { ChangeEvent, FunctionComponent, useMemo, useState } from 'react';
+import { FunctionComponent, useMemo, useState } from 'react';
 import CSS, { Property } from 'csstype';
 import ButtonWithIconBefore from '../ButtonWithIconBefore';
-import styles from './FilterSidebar.module.css';
+import styles from './FilterSidebar.module.scss';
 import Button from '../Button';
-import FilterPrice from './FilterPrice/FilterPrice';
+import FilterPrice from './FilterPrice';
 import FilterTransfers from './FilterTransfers';
 import FilterTransferDuration from './FilterTransferDuration';
 import FilterCompanies from './FilterCompanies';

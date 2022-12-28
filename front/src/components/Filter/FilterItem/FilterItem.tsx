@@ -2,7 +2,7 @@ import { Collapse } from '@mui/material';
 import { FunctionComponent, useState } from 'react';
 import clsx from 'clsx';
 import Button from '../../Button';
-import styles from './FilterItem.module.css';
+import styles from './FilterItem.module.scss';
 
 interface FilterItemProps {
   name: string;

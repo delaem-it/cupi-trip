@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import { Slider } from '@mui/material';
 import FilterItem from '../FilterItem/FilterItem';
-import styles from './FilterPrice.module.css';
+import styles from './FilterPrice.module.scss';
 
 interface FilterPriceProps {
   min: number;

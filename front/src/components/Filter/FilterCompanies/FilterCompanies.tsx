@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react';
-import Checkbox from '../Checkbox';
-import CheckboxWIthLogo from '../CheckboxWIthLogo';
-import styles from './FilterCompanies.module.css';
+import CheckboxWIthLogo from '../../CheckboxWIthLogo';
+import styles from './FilterCompanies.module.scss';
 
 const FilterCompanies: FunctionComponent = () => {
   return (
@@ -19,9 +18,6 @@ const FilterCompanies: FunctionComponent = () => {
           <CheckboxWIthLogo logo="../icons/aeroaeroSAS.svg" label="SAS" />
           <CheckboxWIthLogo logo="../icons/logo5.svg" label="Qatar Airways" />
           <CheckboxWIthLogo logo="../icons/logo6.svg" label="Lufthansa" />
-          <Checkbox label="2 пересадки" />
-          <Checkbox label="3 пересадки" />
-          <Checkbox label="4 пересадки" />
         </div>
         <div className={styles.slider}>
           <div className={styles.rectangleDiv} />
