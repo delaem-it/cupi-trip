@@ -1,0 +1,214 @@
+.rectangleDiv {
+  flex: 1;
+  position: relative;
+  background-color: var(--gray-d5d7e2);
+  width: 1px;
+}
+.field,
+.line {
+  background-color: var(--white-ffffff);
+  display: flex;
+  justify-content: flex-start;
+}
+.line {
+  align-self: stretch;
+  flex-direction: column;
+  padding: var(--padding-2xs) 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.field {
+  flex: 1;
+  border-radius: var(--br-md);
+  box-shadow: var(--search-field);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-0);
+}
+.div,
+.div1 {
+  position: relative;
+  display: inline-block;
+}
+.div {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.div1 {
+  font-size: var(--exo-2-12-size);
+  color: var(--gray-a5a7b2);
+}
+.subtitleheading {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.icons20px {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.field1 {
+  flex: 1;
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff);
+  box-shadow: var(--search-field);
+  display: none;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.div2,
+.div3 {
+  position: relative;
+  display: inline-block;
+}
+.div3 {
+  font-size: var(--exo-2-16-size);
+  font-weight: 500;
+  color: var(--black-000000);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.icons16px {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.field2 {
+  align-self: stretch;
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.rectangleDiv4 {
+  flex: 1;
+  position: relative;
+  background-color: var(--gray-d5d7e2);
+  height: 1px;
+}
+.field4,
+.line4 {
+  background-color: var(--white-ffffff);
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.line4 {
+  align-self: stretch;
+  padding: 0 var(--padding-xs);
+  align-items: flex-start;
+}
+.field4 {
+  flex: 1;
+  border-radius: var(--br-md);
+  padding: var(--padding-xs);
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.fieldsData,
+.fieldsearchmobile {
+  align-items: center;
+  gap: var(--gap-0);
+}
+.fieldsData {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.fieldsearchmobile {
+  flex: 1;
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff);
+  box-shadow: var(--search-field);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--exo-2-12-size);
+  color: var(--gray-a5a7b2);
+}
+.searchFieldbutton {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-5xl);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  position: sticky;
+  text-align: left;
+  font-size: var(--exo-2-16-size);
+  color: var(--black-000000);
+  font-family: var(--exo-2-24-regular);
+}
+@media screen and (max-width: 768px) {
+  .field {
+    display: none;
+  }
+  .field1 {
+    display: flex;
+  }
+  .fieldsearchmobile {
+    display: none;
+  }
+  .searchFieldbutton {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .field {
+    display: none;
+  }
+  .field1 {
+    display: flex;
+  }
+  .fieldsearchmobile {
+    display: none;
+  }
+  .searchFieldbutton {
+    padding-left: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .field {
+    display: none;
+  }
+  .field1 {
+    display: flex;
+  }
+  .fieldsearchmobile {
+    display: none;
+  }
+  .searchFieldbutton {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}

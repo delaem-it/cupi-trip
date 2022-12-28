@@ -1,0 +1,32 @@
+.icons16px {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.div,
+.div1 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+}
+.div1 {
+  text-align: right;
+}
+.iconheading {
+  align-self: stretch;
+  border-radius: var(--br-md);
+  background-color: var(--gray-f3f4fb1);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-4xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  text-align: left;
+  font-size: var(--exo-2-12-size);
+  color: var(--gray-81838e1);
+  font-family: var(--exo-2-24-regular);
+}

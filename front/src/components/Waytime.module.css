@@ -1,0 +1,114 @@
+.vectorIcon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 14px;
+}
+.div {
+  position: relative;
+  display: inline-block;
+}
+.price {
+  border-radius: var(--br-sm);
+  background-color: var(--black-222222);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-4xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vectorIcon1 {
+  position: relative;
+  width: 8px;
+  height: 4px;
+  flex-shrink: 0;
+}
+.tagTransfer {
+  box-shadow: var(--sh-tag-map1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.pointTransferIcon {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+}
+.pointTransfer {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-2xs);
+}
+.vectorIcon2 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 14.73px;
+}
+.line,
+.way {
+  flex: 1;
+  flex-direction: row;
+}
+.line {
+  display: flex;
+  padding: var(--padding-4xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.way {
+  gap: var(--gap-lg);
+}
+.timestatus,
+.way,
+.waytime {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.timestatus {
+  width: auto;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: var(--gap-2xs);
+  text-align: left;
+  font-size: var(--exo-2-16-size);
+  color: var(--black-000000);
+}
+.waytime {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-lg);
+  text-align: center;
+  font-size: var(--exo-2-12-size);
+  color: var(--white-ffffff);
+  font-family: var(--exo-2-24-regular);
+}
+@media screen and (max-width: 768px) {
+  .line {
+    display: none;
+  }
+  .way {
+    flex: unset;
+    align-self: stretch;
+  }
+  .timestatus {
+    flex-direction: row;
+  }
+  .waytime {
+    flex-direction: column;
+  }
+}

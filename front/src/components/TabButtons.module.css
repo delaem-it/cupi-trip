@@ -1,0 +1,64 @@
+.div {
+  position: relative;
+  font-size: var(--exo-2-12-size);
+  font-weight: 600;
+  font-family: var(--exo-2-24-regular);
+  color: var(--black-000000);
+  text-align: center;
+  display: inline-block;
+}
+.tabs {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-2xs);
+  background-color: var(--white-ffffff);
+  flex: 1;
+  border-radius: var(--br-md);
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.tabs:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.div1 {
+  position: relative;
+  font-size: var(--exo-2-12-size);
+  font-weight: 600;
+  font-family: var(--exo-2-24-regular);
+  color: var(--gray-a5a7b2);
+  text-align: center;
+  display: inline-block;
+}
+.tabButtons,
+.tabs1 {
+  background-color: var(--gray-eef0f61);
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.tabs1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-2xs);
+  flex: 1;
+  border-radius: var(--br-md);
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s;
+}
+.tabs1:hover {
+  background-color: var(--color-gray-300);
+}
+.tabButtons {
+  align-self: stretch;
+  border-radius: var(--br-lg);
+  overflow: hidden;
+  padding: var(--padding-6xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}

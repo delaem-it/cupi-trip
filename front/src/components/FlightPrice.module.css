@@ -1,0 +1,16 @@
+.div {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--exo-2-20-size);
+  font-weight: 600;
+  font-family: var(--exo-2-24-regular);
+  color: var(--black-000000);
+  text-align: left;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .div {
+    width: 50%;
+    vertical-align: center;
+  }
+}

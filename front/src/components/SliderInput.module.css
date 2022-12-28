@@ -1,0 +1,72 @@
+.div,
+.div1 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+}
+.div1 {
+  text-align: right;
+}
+.price {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.rectangleDiv {
+  flex: 1;
+  position: relative;
+  background-color: var(--blue-007aff1);
+  height: 2px;
+}
+.line1 {
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  right: 0;
+  left: 0;
+  border-radius: var(--br-2xs);
+  background-color: var(--gray-eef0f61);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bulletIcon {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.point {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.line {
+  align-self: stretch;
+  position: relative;
+  height: 12px;
+  flex-shrink: 0;
+}
+.lineFilter {
+  width: 278px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--gray-52545c);
+  font-family: var(--exo-2-24-regular);
+}

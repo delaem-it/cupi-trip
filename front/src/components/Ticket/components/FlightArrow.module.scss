@@ -1,0 +1,53 @@
+// .vectorIcon,
+// .vectorIcon1 {
+//   flex: 1;
+//   position: relative;
+//   max-width: 100%;
+//   overflow: hidden;
+//   height: 14px;
+// }
+// .vectorIcon1 {
+//   height: 14.73px;
+// }
+.line {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+  position: relative;
+
+  .hr {
+    width: 98%;
+    color: var(--gray-d5d7e2);
+    background-color: var(--gray-d5d7e2);
+    height: 2px;
+    border: none;
+    fill: var(--gray-d5d7e2);
+  }
+
+  .arrowStart,
+  .arrowEnd,
+  .circle {
+    position: absolute;
+  }
+
+  .arrowEnd {
+    right: 0;
+  }
+
+  .tooltip {
+    border-radius: var(--br-sm);
+    background-color: var(--black-222222);
+    padding: var(--padding-5xs) var(--padding-4xs);
+    white-space: pre-line;
+  }
+}
+@media screen and (max-width: 768px) {
+  .line {
+    display: none;
+  }
+}

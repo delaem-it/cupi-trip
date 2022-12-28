@@ -1,0 +1,49 @@
+.div,
+.icons24px {
+  position: relative;
+}
+.icons24px {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div {
+  font-weight: 600;
+  display: inline-block;
+}
+.buttonIcon {
+  border-radius: var(--br-2xl);
+  border: 1px solid var(--white-ffffff);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-xs);
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--white-ffffff);
+  font-family: var(--exo-2-24-regular);
+}
+@media screen and (max-width: 768px) {
+  .div {
+    display: none;
+  }
+  .buttonIcon {
+    padding-left: var(--padding-4xs);
+    padding-right: var(--padding-4xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .div {
+    display: none;
+  }
+  .buttonIcon {
+    padding-right: var(--padding-4xs);
+    box-sizing: border-box;
+  }
+}

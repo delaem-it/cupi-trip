@@ -1,0 +1,111 @@
+.div,
+.icons16px {
+  position: relative;
+}
+.div {
+  flex: 1;
+  font-weight: 600;
+  display: inline-block;
+}
+.icons16px {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.nameFilter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.rectangleDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: var(--white-ffffff);
+  border: 1px solid var(--gray-a5a7b2);
+  box-sizing: border-box;
+}
+.icons20px {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div1 {
+  position: relative;
+  display: inline-block;
+}
+.checkbox,
+.list {
+  display: flex;
+  justify-content: flex-start;
+}
+.checkbox {
+  border-radius: var(--br-2xl);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.list {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-md);
+}
+.rectangleDiv4,
+.slider {
+  border-radius: var(--br-xs);
+}
+.rectangleDiv4 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--gray-a5a7b2);
+  height: 32px;
+}
+.slider {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--gray-eef0f61);
+  width: 3px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.filter,
+.filterLists {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.filterLists {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  display: none;
+  flex-direction: row;
+  gap: var(--gap-xs);
+  color: var(--gray-52545c);
+}
+.filter {
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff);
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-sm);
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--black-000000);
+  font-family: var(--exo-2-24-regular);
+}

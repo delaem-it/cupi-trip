@@ -1,0 +1,47 @@
+.rectangleDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: var(--white-ffffff);
+  border: 1px solid var(--gray-a5a7b2);
+  box-sizing: border-box;
+}
+.icons20px {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div,
+.icons20px,
+.logoIcon {
+  position: relative;
+}
+.logoIcon {
+  border-radius: var(--br-2xl);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.div {
+  display: inline-block;
+}
+.checkbox {
+  align-self: stretch;
+  border-radius: var(--br-2xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--gray-52545c);
+  font-family: var(--exo-2-24-regular);
+}

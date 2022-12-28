@@ -1,0 +1,135 @@
+.ticket {
+  display: flex;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+  padding: var(--padding-lg);
+  border-radius: var(--br-md);
+  overflow: hidden;
+  background-color: var(--white-ffffff);
+  text-align: left;
+  font-size: var(--exo-2-20-size);
+  color: var(--black-000000);
+  font-family: var(--exo-2-24-regular);
+
+  .directionTag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--gray-a5a7b3);
+    margin-top: 16px;
+
+    .tag {
+      font-family: var(--exo-2-24-regular);
+      font-style: normal;
+      font-weight: 400;
+      font-size: var(--exo-2-10-size);
+      line-height: 12px;
+      margin-right: 10px;
+    }
+    .hr {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid var(--gray-eef0f61);
+    }
+  }
+
+  .waytimeavia {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: var(--padding-lg);
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-sm);
+  }
+  .price,
+  .separator {
+    align-self: stretch;
+    position: relative;
+  }
+  .separator {
+    background-color: var(--gray-eef0f61);
+    width: 1px;
+    flex-shrink: 0;
+  }
+  .price {
+    font-weight: 600;
+    display: inline-block;
+  }
+  .pricebutton,
+  .priceDetails,
+  .ticket {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+  }
+  .pricebutton {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-sm);
+  }
+  .priceDetails,
+  .ticket {
+    box-sizing: border-box;
+  }
+  .priceDetails {
+    width: 184px;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding-left: var(--padding-lg);
+    justify-content: space-between;
+  }
+  .expand {
+    padding: 0;
+    justify-content: flex-start;
+    color: var(--blue-007aff1);
+    gap: var(--gap-2xs);
+  }
+  .expand:hover {
+    padding: 0;
+    justify-content: flex-start;
+    color: var(--blue-0068d9);
+  }
+  .invert {
+    img {
+      transform: rotateX(180deg);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .ticket {
+    flex-direction: column;
+    padding: var(--padding-xs);
+    box-sizing: border-box;
+
+    .waytimeavia {
+      padding-right: 0;
+      padding-bottom: var(--padding-xs);
+      box-sizing: border-box;
+      flex: unset;
+      align-self: stretch;
+    }
+    .separator {
+      display: flex;
+      height: 1px;
+      width: 100%;
+    }
+    .price {
+      width: 50%;
+    }
+    .pricebutton {
+      flex-direction: row;
+      width: 100%;
+      padding-bottom: var(--padding-2xs);
+    }
+    .priceDetails {
+      padding-left: 0;
+      padding-top: var(--padding-xs);
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}

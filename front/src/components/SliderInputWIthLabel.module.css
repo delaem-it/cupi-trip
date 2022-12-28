@@ -1,0 +1,83 @@
+.div,
+.div1,
+.div2 {
+  position: relative;
+  display: inline-block;
+}
+.div1,
+.div2 {
+  flex: 1;
+}
+.div2 {
+  text-align: right;
+}
+.frameDiv,
+.price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.price {
+  width: 278px;
+  flex-direction: row;
+  gap: var(--gap-0);
+}
+.frameDiv {
+  flex-direction: column;
+  gap: var(--gap-2xs);
+}
+.rectangleDiv {
+  flex: 1;
+  position: relative;
+  background-color: var(--blue-007aff1);
+  height: 2px;
+}
+.line1 {
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  right: 0;
+  left: 0;
+  border-radius: var(--br-2xs);
+  background-color: var(--gray-eef0f61);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bulletIcon {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.point {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.line {
+  align-self: stretch;
+  position: relative;
+  height: 12px;
+  flex-shrink: 0;
+}
+.lineFilter {
+  width: 278px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--gray-52545c);
+  font-family: var(--exo-2-24-regular);
+}

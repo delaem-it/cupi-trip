@@ -1,0 +1,163 @@
+.icons16px {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+}
+.scrollArrow {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--gray-f3f4fb1);
+  position: relative;
+  border-radius: var(--br-xl);
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: none;
+}
+.scrollArrow1:hover,
+.scrollArrow:hover {
+  background-color: var(--color-gray-300);
+}
+.div {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+}
+.scrollArrow1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--gray-f3f4fb1);
+  position: relative;
+  border-radius: var(--br-xl);
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.month {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 var(--padding-2xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  font-size: var(--exo-2-16-size);
+  color: var(--black-000000);
+}
+.div3 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+}
+.button:hover,
+.div2 {
+  box-sizing: border-box;
+}
+.div1,
+.div2 {
+  display: flex;
+  flex-direction: row;
+}
+.div2 {
+  background-color: var(--white-ffffff);
+  width: 42px;
+  flex-shrink: 0;
+  padding: var(--padding-6xs);
+  align-items: center;
+  justify-content: center;
+}
+.div1 {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+  color: var(--gray-a5a7b2);
+}
+.div18 {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  flex-shrink: 0;
+}
+.div17 {
+  border-radius: var(--br-md);
+  background-color: var(--white-ffffff);
+  border: 1px solid var(--white-ffffff);
+  box-sizing: border-box;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-2xs);
+  align-items: center;
+  justify-content: center;
+}
+.div21 {
+  position: relative;
+  font-size: var(--exo-2-14-size);
+  font-family: var(--exo-2-24-regular);
+  color: var(--black-000000);
+  text-align: center;
+  display: inline-block;
+  width: 18px;
+  flex-shrink: 0;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--white-ffffff);
+  padding: var(--padding-2xs);
+  background-color: var(--white-ffffff);
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  border: 1px solid var(--black-222222);
+}
+.div16,
+.dropdownData {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-0);
+}
+.div16 {
+  align-self: stretch;
+  flex-direction: row;
+}
+.dropdownData {
+  background-color: var(--white-ffffff);
+  flex-direction: column;
+  text-align: center;
+  font-size: var(--exo-2-14-size);
+  color: var(--white-ffffff);
+  font-family: var(--exo-2-24-regular);
+}
+@media screen and (max-width: 1200px) {
+  .dropdownData {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .scrollArrow1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .scrollArrow {
+    display: flex;
+  }
+  .dropdownData {
+    display: none;
+  }
+}

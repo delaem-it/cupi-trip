@@ -1,0 +1,24 @@
+.div {
+  position: relative;
+  font-size: var(--exo-2-14-size);
+  font-family: var(--exo-2-24-regular);
+  color: var(--black-000000);
+  text-align: center;
+  display: inline-block;
+  width: 18px;
+  flex-shrink: 0;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid var(--gray-eef0f61);
+  padding: var(--padding-2xs);
+  background-color: var(--gray-eef0f61);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  border-radius: var(--br-md);
+}

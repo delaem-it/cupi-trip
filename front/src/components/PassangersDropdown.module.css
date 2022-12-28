@@ -1,0 +1,22 @@
+.dropdown {
+  margin: 0 !important;
+  position: absolute;
+  top: 75px;
+  left: -92px;
+  border-radius: var(--br-lg);
+  background-color: var(--white-ffffff);
+  box-shadow: var(--window2);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--exo-2-14-size);
+  color: var(--black-000000);
+  font-family: var(--exo-2-24-regular);
+}

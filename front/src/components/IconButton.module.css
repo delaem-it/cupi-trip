@@ -1,0 +1,27 @@
+.icons20px {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 25%;
+  right: 25%;
+  bottom: 25%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.iconButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--gray-52545c);
+  position: relative;
+  border-radius: var(--br-md);
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  transition: background-color 0.2s;
+}
+.iconButton:hover {
+  background-color: var(--gray-81838e1);
+}
