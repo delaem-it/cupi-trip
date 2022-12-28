@@ -15,7 +15,7 @@ class TravelPayoutsController extends Controller
         $travel = new Travel('37a27d5db50c6199a688c51139146776');
         $flightService = $travel->getFlightService();
         $flightService
-            ->setIp('127.0.0.1')
+            ->setIp(env('APP_DOMAIN'))
             ->setHost('beta.aviasales.ru')
             ->setMarker('211648')
             ->addPassenger('adults', 2)
