@@ -71,5 +71,13 @@ export const theme = createTheme({
         },
       },
     },
+    MuiSlider: {
+      styleOverrides: {
+        root: {
+          width: '96%',
+          alignSelf: 'center',
+        },
+      },
+    },
   },
 });

@@ -20,6 +20,14 @@ export const formatDuration = (duration?: number | Duration) => {
   return formatDurationFromDuration(duration);
 };
 
+export const formatTime = (durationInMinutes: number) => {
+  const hours = Math.floor(durationInMinutes / 60);
+  const minutes = Math.round(durationInMinutes - hours * 60);
+  const hoursString = hours ? hours.toFixed(0) : '00';
+  const minutesString = minutes ? minutes.toFixed(0) : '00';
+  return `${hoursString}:${minutesString}`;
+};
+
 export const formatPrice = (price?: Price | string | number) => {
   if (!price) return;
   if (typeof price === 'string' && price.includes('₽')) return price;

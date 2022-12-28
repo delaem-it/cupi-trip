@@ -9,8 +9,8 @@ import FilterDepartureArrival from './FilterDepartureArrival';
 import styles from './FilterSidebar.module.scss';
 
 const FilterSidebar: FunctionComponent = () => {
-  const [price, setPrice] = useState([400, 9000]);
-  const [transferDuration, setTransferDuration] = useState([30, 120]);
+  const [price, setPrice] = useState([0, 10000]);
+  const [transferDuration, setTransferDuration] = useState([0, 720]);
   const handlePriceChange = (e: Event, newValue: number | number[]) =>
     typeof newValue !== 'number' && setPrice(newValue);
   const handleTransferDurationChange = (e: Event, newValue: number | number[]) =>
@@ -32,7 +32,9 @@ const FilterSidebar: FunctionComponent = () => {
         </div>
       </div>
       <ButtonWithIconBefore icons16px="../icons/icons-16px16.svg" text="Сбросить фильтр" />
-      <Button iconBefore="../icons/icons-16px16.svg">Сбросить фильтр</Button>
+      <Button variant="text" iconBefore="../icons/icons-16px16.svg">
+        Сбросить фильтр
+      </Button>
     </div>
   );
 };

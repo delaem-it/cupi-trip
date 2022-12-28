@@ -17,7 +17,9 @@ const FilterPrice: FunctionComponent<FilterPriceProps> = ({ min, max, value, onC
         <div className={styles.div}>{value[0] + ' ₽'}</div>
         <div className={styles.div}>{value[1] + ' ₽'}</div>
       </div>
-      <Slider aria-labelledby="Цена" size="small" value={value} min={min} max={max} onChange={onChange} />
+      <div>
+        <Slider aria-labelledby="Цена" size="small" value={value} min={min} max={max} onChange={onChange} />
+      </div>
     </FilterItem>
   );
 };
