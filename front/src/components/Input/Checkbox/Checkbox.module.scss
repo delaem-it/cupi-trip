@@ -1,0 +1,43 @@
+.checkbox {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  border-radius: var(--br-2xl);
+  color: var(--gray-52545c);
+  font-size: var(--exo-2-14-size);
+  font-family: var(--exo-2-24-regular);
+
+  .input {
+    width: 20px;
+    height: 20px;
+    border-radius: var(--br-sm);
+    background-color: var(--white-ffffff);
+    border: 1px solid var(--gray-a5a7b2);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    position: relative;
+  }
+
+  .input:active {
+    border: 1px solid var(--gray-52545c);
+  }
+
+  .input:checked {
+    .input::after {
+      content: '../icons/iconTick.svg';
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    background-color: var(--blue-007aff);
+  }
+  .label {
+    display: inline-block;
+  }
+}
