@@ -2,16 +2,16 @@ import { Price } from '../types/ticket';
 
 const formatDurationFromNumber = (durationInMinutes: number) => {
   const hours = Math.floor(durationInMinutes / 60);
-  const minutes = Math.round(durationInMinutes - +hours * 60);
-  return `${hours} ч ${minutes} мин`;
+  const minutes = Math.round(durationInMinutes - hours * 60);
+  return formatDurationFromDuration({ hours, minutes });
 };
 
 const formatDurationFromDuration = (duration: Duration) => {
-  const days = duration.days ? `${duration.days} д` : '';
-  const hours = duration.hours ? `${duration.hours} ч` : '';
-  const minutes = duration.minutes ? `${duration.minutes} мин` : '';
-  const result = `${days} ${hours} ${minutes}`;
-  return result.trim();
+  const days = duration.days ? `${duration.days} д` : '';
+  const hours = duration.hours ? `${duration.hours} ч` : '';
+  const minutes = duration.minutes ? `${duration.minutes} мин` : '';
+  const result = `${days} ${hours} ${minutes}`.trim();
+  return result || '0 мин';
 };
 
 export const formatDuration = (duration?: number | Duration) => {
