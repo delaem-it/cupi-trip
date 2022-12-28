@@ -38,6 +38,9 @@
     background-color: var(--blue-007aff);
   }
   .label {
-    display: inline-block;
+    display: flex;
+    gap: var(--gap-xs);
+    justify-content: flex-start;
+    align-items: center;
   }
 }

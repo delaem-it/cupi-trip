@@ -4,6 +4,7 @@ import Checkbox1 from './Checkbox/Checkbox';
 type Props = InputHTMLAttributes<HTMLInputElement> & {
   label: string;
   name: string;
+  icon?: JSX.Element;
 };
 
 const Input: FC<Props> = props => {

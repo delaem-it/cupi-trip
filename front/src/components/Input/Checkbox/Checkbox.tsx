@@ -5,6 +5,7 @@ import styles from './Checkbox.module.scss';
 type CheckboxType = {
   label: string;
   name: string;
+  icon?: JSX.Element;
 };
 
 const Checked = () => (
@@ -39,7 +40,7 @@ const Unchecked = () => (
   </svg>
 );
 
-const Checkbox: FunctionComponent<CheckboxType> = ({ label, name }) => {
+const Checkbox: FunctionComponent<CheckboxType> = ({ label, name, icon }) => {
   return (
     <div className={styles.checkbox}>
       <MuiCheckbox
@@ -50,6 +51,7 @@ const Checkbox: FunctionComponent<CheckboxType> = ({ label, name }) => {
         inputProps={{ 'aria-label': label }}
       />
       <label htmlFor={name} className={styles.label}>
+        {icon}
         {label}
       </label>
     </div>
