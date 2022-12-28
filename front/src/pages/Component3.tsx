@@ -187,7 +187,7 @@ const Component3: FunctionComponent = () => {
           </div>
         </div>
         <div className={styles.filtertickets}>
-          <FilterSidebar filterCursor="pointer" />
+          <FilterSidebar />
           <SearchMessage />
         </div>
         <footer className={styles.footer}>

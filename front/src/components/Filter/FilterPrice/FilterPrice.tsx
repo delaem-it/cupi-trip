@@ -13,9 +13,9 @@ interface FilterPriceProps {
 const FilterPrice: FunctionComponent<FilterPriceProps> = ({ min, max, value, onChange }) => {
   return (
     <FilterItem name="Цена">
-      <div className={styles.price}>
+      <div className={styles.labels}>
         <div className={styles.div}>{value[0] + ' ₽'}</div>
-        <div className={styles.div1}>{value[1] + ' ₽'}</div>
+        <div className={styles.div}>{value[1] + ' ₽'}</div>
       </div>
       <Slider aria-labelledby="Цена" size="small" value={value} min={min} max={max} onChange={onChange} />
     </FilterItem>
