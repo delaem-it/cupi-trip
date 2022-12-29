@@ -7,10 +7,10 @@ const formatDurationFromNumber = (durationInMinutes: number) => {
 };
 
 const formatDurationFromDuration = (duration: Duration) => {
-  const days = duration.days ? `${duration.days} д` : '';
-  const hours = duration.hours ? `${duration.hours} ч` : '';
+  const days = duration.days || 0;
+  const hours = duration.hours ? `${duration.hours + 24 * days} ч` : '';
   const minutes = duration.minutes ? `${duration.minutes} мин` : '';
-  const result = `${days} ${hours} ${minutes}`.trim();
+  const result = `${hours} ${minutes}`.trim();
   return result || '0 мин';
 };
 
