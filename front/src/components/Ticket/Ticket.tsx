@@ -14,83 +14,6 @@ type TicketType = {
   ticket: ITicket;
 };
 
-const defaultTicket: ITicket = {
-  id: 1,
-  price: { value: 9123, currency: 'RUB', symbol: '₽' },
-  to: {
-    company: { name: 'Nordwind', logo: '../icons/aeroNordwind.svg' },
-    routes: [
-      {
-        from: {
-          airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
-          date: 1696223700000,
-        },
-        to: {
-          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
-          date: 1696228500000,
-        },
-      },
-      {
-        from: {
-          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
-          date: 1696240500000,
-        },
-        to: {
-          airport: { name: 'Казань', code: 'KZN' },
-          date: 1696382100000,
-        },
-        tag: { text: 'Прямой', color: 'success' },
-      },
-      {
-        from: {
-          airport: { name: 'Казань', code: 'KZN' },
-          date: 1696438100000,
-        },
-        to: {
-          airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
-          date: 1696558400000,
-        },
-      },
-    ],
-  },
-  from: {
-    company: { name: 'Победа', logo: '../icons/logo3.svg' },
-    routes: [
-      {
-        from: {
-          airport: { name: 'Внуково', code: 'VKO', city: 'Москва' },
-          date: 1696223700000,
-        },
-        to: {
-          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
-          date: 1696228500000,
-        },
-        tag: { text: 'Прямой', color: 'success' },
-      },
-      {
-        from: {
-          airport: { name: 'Гагарин', code: 'GSV', city: 'Саратов' },
-          date: 1696240500000,
-        },
-        to: {
-          airport: { name: 'Казань', code: 'KZN' },
-          date: 1696382100000,
-        },
-      },
-      {
-        from: {
-          airport: { name: 'Казань', code: 'KZN' },
-          date: 1696438100000,
-        },
-        to: {
-          airport: { name: 'Пулково', code: 'LED', city: 'Санкт-Петербург' },
-          date: 1696558400000,
-        },
-      },
-    ],
-  },
-};
-
 const getTransfers = (routes: Route[]) => {
   return routes.reduce((prev: Transfer[], cur: Route, index: number): Transfer[] => {
     if (index === 0) return prev;
@@ -153,19 +76,20 @@ const getSummaryTicket = (ticket: ITicket): ITicket => {
   return summaryTicket;
 };
 
-const Ticket: FC<TicketType> = ({ ticket = defaultTicket }) => {
+const Ticket: FC<TicketType> = ({ ticket }) => {
   const [showDetails, setShowDetails] = useState(false);
 
   const summaryTicket = getSummaryTicket(ticket);
-  console.log({ summaryTicket });
   const hasDetails = ticket.to.routes.length > 1 || (ticket.from && ticket.from?.routes.length > 1);
 
   return (
     <div className={styles.ticket}>
       <div className={styles.waytimeavia}>
-        <div className={styles.directionTag}>
-          <span className={styles.tag}>ТУДА</span>
-        </div>
+        {ticket.from && (
+          <div className={styles.directionTag}>
+            <span className={styles.tag}>ТУДА</span>
+          </div>
+        )}
         <AviacompanyLogo company={ticket.to.company} />
         {showDetails ? (
           ticket.to.routes.map((route, index) => {
